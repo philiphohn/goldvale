@@ -1,0 +1,140 @@
+{
+  "Nav": {
+    "arbeiten": "Arbeiten",
+    "leistungen": "Leistungen",
+    "studio": "Studio",
+    "journal": "Journal",
+    "erstgespraech": "Erstgespräch"
+  },
+  "Hero": {
+    "line1": "digitale",
+    "line2": "auftritte",
+    "line3": "für",
+    "line4": "ambitionierte",
+    "line5": "unternehmen.",
+    "p1": "Goldvale Studios ist ein Digitalstudio für ",
+    "p2_websites": "Websites",
+    "p3": ", ",
+    "p4_app": "App-Entwicklung",
+    "p5": ", ",
+    "p6_marken": "Marken",
+    "p7": " und ",
+    "p8_strategie": "Strategie",
+    "p9": " — von der ersten Idee bis über den Livegang hinaus. Durchdacht, präzise, unverwechselbar.",
+    "meta1": "Berlin & remote",
+    "meta2": "Design · Entwicklung · Strategie"
+  },
+  "Work": {
+    "section_title": "ausgewählte projekte",
+    "idx": "01 — Arbeiten",
+    "all_projects": "Alle Projekte"
+  },
+  "Studio": {
+    "idx": "02 — Studio",
+    "section_title": "in aller kürze",
+    "item1": "Strategie, Design und Entwicklung <bold>aus einer Hand</bold> — kein Reibungsverlust zwischen Disziplinen.",
+    "item2": "Fokus auf <bold>Wirkung statt Effekte</bold>. Jede Entscheidung zahlt auf ein Ziel ein.",
+    "item3": "Enge, partnerschaftliche Zusammenarbeit <bold>ab Tag 1</bold> — nah, verbindlich, ehrlich.",
+    "item4": "Auftritte, die <bold>bleiben</bold> — gestalterisch wie technisch, weit über den Launch hinaus."
+  },
+  "Services": {
+    "idx": "03 — Leistungen",
+    "section_title": "was wir bauen",
+    "s1_title": "websites & experience",
+    "s1_desc": "Markenwebsites, die im Gedächtnis bleiben — von Konzept bis pixelgenaue Umsetzung.",
+    "s2_title": "app- & produktentwicklung",
+    "s2_desc": "Web- und Native-Anwendungen, die Nutzer gern verwenden — von der Skizze zum Produkt.",
+    "s3_title": "marken & designsysteme",
+    "s3_desc": "Visuelle Identität und Systeme, die über alle Kanäle konsequent zusammenklingen.",
+    "s4_title": "strategie & beratung",
+    "s4_desc": "Positionierung, Struktur und digitale Roadmap — Klarheit vor dem ersten Pixel."
+  },
+  "Manifest": {
+    "haltung": "Haltung",
+    "text_1": "ein digitaler auftritt ist kein selbstzweck. er entscheidet, ob eine marke ",
+    "text_2": "ernst genommen",
+    "text_3": " wird."
+  },
+  "Contact": {
+    "title_1": "lassen sie uns ",
+    "title_2": "kennenlernen.",
+    "lead": "Wir nehmen uns gern die Zeit, Ihre Idee anzusehen und ehrlich einzuschätzen — unverbindlich und kostenlos.",
+    "btn1": "Erstgespräch vereinbaren",
+    "btn2": "Arbeiten ansehen",
+    "person_role": "Gründer & Ansprechpartner",
+    "form_name": "Name",
+    "form_email": "E-Mail",
+    "form_message": "Nachricht",
+    "form_submit": "Nachricht senden",
+    "form_sending": "Wird gesendet...",
+    "form_success": "Vielen Dank! Ihre Nachricht wurde gesendet.",
+    "form_error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut."
+  },
+  "Journal": {
+    "idx": "04 — Journal",
+    "section_title": "gedanken & einblicke",
+    "all_posts": "Alle Beiträge"
+  },
+  "Footer": {
+    "big_1": "lassen sie uns etwas ",
+    "big_2": "bleibendes bauen. ",
+    "col_studio": "Studio",
+    "col_contact": "Kontakt",
+    "col_social": "Social",
+    "col_legal": "Rechtliches",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz",
+    "tagline": "Digitale Auftritte für ambitionierte Unternehmen."
+  },
+  "WorkDetail": {
+    "title": "Unsere Arbeiten",
+    "lead": "Digitale Erlebnisse, die Marken stärken und Nutzer begeistern.",
+    "cta_title": "Starten wir Ihr nächstes Projekt",
+    "cta_desc": "Wir sind immer auf der Suche nach neuen Herausforderungen.",
+    "proj1_name": "Eventboot.de",
+    "proj1_desc": "Mieten Sie die exklusivsten Eventboote in Berlin. Hausboote und Yachten für Geburtstage, Hochzeiten und Firmenfeiern.",
+    "proj1_tags": "Web-App, Buchungssystem, SEO",
+    "proj2_name": "Faultr.ai",
+    "proj2_desc": "Stress-Testing-Infrastruktur für agentenbasierte Transaktionen. Simulation von Mandatsverletzungen und Edge Cases für KI-Agenten.",
+    "proj2_tags": "B2B SaaS, KI, Dashboard",
+    "proj3_name": "Filoxenos.gr",
+    "proj3_desc": "Die umfassendste Plattform zur Automatisierung von Kurzzeitmiet-Erklärungen in Griechenland mit direkten Channel-Manager-Integrationen.",
+    "proj3_tags": "Plattform, API-Integration, PropTech",
+    "proj4_name": "The Lakeside Loft",
+    "proj4_desc": "Ein exklusives Eventboot in Berlin. Eine Oase mitten in der Stadt mit gehobener Ausstattung, Catering und einzigartigem Ambiente.",
+    "proj4_tags": "Website, Branding, Hospitality",
+    "proj5_name": "Tolon House",
+    "proj5_desc": "Stilvolle, frisch renovierte Apartments im Boho-Stil im Herzen von Tolo, Griechenland für die ganze Familie.",
+    "proj5_tags": "Website, Tourismus, Design"
+  },
+  "ServicesDetail": {
+    "title": "Unsere Leistungen",
+    "lead": "Von der ersten Idee bis zum fertigen Produkt. Wir begleiten Sie durch den gesamten digitalen Prozess mit Präzision und Weitblick.",
+    "process_title": "Unser Ansatz",
+    "process_1_title": "Analyse",
+    "process_1_desc": "Wir analysieren Ihre Marke, Zielgruppe und Wettbewerb, um fundierte Entscheidungen zu treffen.",
+    "process_2_title": "Strategie",
+    "process_2_desc": "Wir entwickeln einen maßgeschneiderten Fahrplan für Ihren digitalen Erfolg.",
+    "process_3_title": "Design & UX",
+    "process_3_desc": "Wir gestalten intuitive und ästhetische Interfaces, die begeistern.",
+    "process_4_title": "Entwicklung",
+    "process_4_desc": "Wir bauen performante und skalierbare Lösungen mit modernen Technologien."
+  },
+  "StudioDetail": {
+    "title": "Das Studio",
+    "lead": "Ein Team aus strategischen Denkern, Designern und Entwicklern mit einer gemeinsamen Vision: digitale Exzellenz.",
+    "values_title": "Unsere Werte",
+    "val_1_title": "Impact",
+    "val_1_desc": "Wir schaffen Lösungen, die einen echten Unterschied machen und messbare Ergebnisse liefern.",
+    "val_2_title": "Partnerschaft",
+    "val_2_desc": "Wir arbeiten eng mit unseren Kunden zusammen und verstehen uns als Teil ihres Teams.",
+    "val_3_title": "Langlebigkeit",
+    "val_3_desc": "Wir setzen auf zeitloses Design und robuste Architektur für nachhaltigen Erfolg."
+  },
+  "Cookie": {
+    "text": "Wir nutzen Cookies, um unsere Website und unseren Service zu optimieren. Mit Klick auf 'Akzeptieren' stimmen Sie der Nutzung von Google Analytics zu.",
+    "accept": "Akzeptieren",
+    "reject": "Ablehnen",
+    "policy": "Datenschutzerklärung"
+  }
+}

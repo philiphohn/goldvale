@@ -1,0 +1,32 @@
+# Goldvale Studios
+
+> Goldvale Studios is a premium digital studio specializing in high-performance websites, custom web & mobile applications, and comprehensive brand strategies.
+
+## About Us
+We are a team of strategic thinkers, designers, and developers with a shared vision: digital excellence. We build digital products that not only look stunning but drive measurable impact, relying on timeless design and robust architecture for sustainable success.
+Goldvale Studios is a brand of **HBC Hohn Business Consulting UG (haftungsbeschränkt)**.
+
+## Core Services
+1. **Websites & UX/UI**: Bespoke, high-conversion websites built on modern tech (Next.js, React, Tailwind CSS, Headless CMS) with an obsessive focus on performance and accessibility.
+2. **App Development**: Complex digital products, SaaS platforms, and mobile applications tailored to digitalize business-critical processes from architecture to deployment.
+3. **Branding & Design Systems**: Digital identities and corporate designs that ensure seamless and consistent brand experiences across all touchpoints.
+4. **Strategy & Consulting**: Data-driven digital strategies, UX audits, and precise roadmaps for sustainable growth and SEO dominance.
+
+## Contact Information
+- **Representative:** Philip Hohn
+- **Address:** Lerchenstraße 7, 14089 Berlin, Germany
+- **Phone:** +49 15678 412954
+- **Email:** hello@goldvale.de
+- **Website:** https://goldvale.de
+- **Commercial Register:** Amtsgericht Berlin (Charlottenburg), HRB 266039
+- **VAT ID:** DE369234361
+
+## Navigation & Resources
+- **Homepage**: https://goldvale.de/
+- **Portfolio / Work**: https://goldvale.de/de/arbeiten
+- **Services**: https://goldvale.de/de/leistungen
+- **Studio Profile**: https://goldvale.de/de/studio
+- **Contact Us**: https://goldvale.de/de/kontakt
+- **Sitemap**: https://goldvale.de/sitemap.xml
+
+*This document is optimized for LLMs and AI Agents.*

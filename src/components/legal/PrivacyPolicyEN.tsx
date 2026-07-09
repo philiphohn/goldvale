@@ -1,0 +1,51 @@
+export default function PrivacyPolicyEN() {
+  return (
+    <div className="text-[var(--color-muted)] flex flex-col gap-6 max-w-[70ch] leading-[1.6]">
+      <section>
+        <h2 className="text-[var(--color-white)] text-[1.5rem] font-semibold mb-3">1. Data Protection at a Glance</h2>
+        <h3 className="text-[var(--color-white)] text-[1.2rem] font-medium mt-4 mb-2">General Information</h3>
+        <p className="mb-4">The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data comprises all data that can be used to personally identify you. Detailed information on the subject of data protection can be found in our privacy policy below.</p>
+        
+        <h3 className="text-[var(--color-white)] text-[1.2rem] font-medium mt-4 mb-2">Data Collection on this Website</h3>
+        <p className="mb-2"><strong className="text-[var(--color-white)]">Who is responsible for data collection on this website?</strong></p>
+        <p className="mb-4">The data processing on this website is carried out by the website operator. Their contact details can be found in the section "Information on the Responsible Entity" in this privacy policy.</p>
+        
+        <p className="mb-2"><strong className="text-[var(--color-white)]">How do we collect your data?</strong></p>
+        <p className="mb-4">Your data is collected on the one hand when you provide it to us. This could, for example, be data you enter into a contact form. Other data is collected automatically or with your consent by our IT systems when you visit the website. This primarily involves technical data (e.g. internet browser, operating system, or time of page view).</p>
+      </section>
+
+      <section>
+        <h2 className="text-[var(--color-white)] text-[1.5rem] font-semibold mt-8 mb-3">2. Hosting (Vercel)</h2>
+        <p className="mb-4">We host the content of our website with the following provider: Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA (hereinafter Vercel). When you visit our website, Vercel collects various log files including your IP addresses. The use of Vercel is based on Art. 6(1)(f) GDPR. We have a legitimate interest in the most reliable presentation of our website.</p>
+      </section>
+
+      <section>
+        <h2 className="text-[var(--color-white)] text-[1.5rem] font-semibold mt-8 mb-3">3. General Notes and Mandatory Information</h2>
+        <h3 className="text-[var(--color-white)] text-[1.2rem] font-medium mt-4 mb-2">Data Protection</h3>
+        <p className="mb-4">The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy.</p>
+        
+        <h3 className="text-[var(--color-white)] text-[1.2rem] font-medium mt-4 mb-2">Information on the Responsible Entity</h3>
+        <p className="mb-2">The responsible entity for data processing on this website is:</p>
+        <p className="mb-4 bg-[var(--color-surface)] p-4 rounded-[5px] border border-[var(--color-line)]">
+          HBC Hohn Business Consulting UG (haftungsbeschränkt)<br />
+          Lerchenstraße 7<br />
+          14089 Berlin<br />
+          Germany<br /><br />
+          Phone: +49 15678 412954<br />
+          Email: hello@goldvale.de
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-[var(--color-white)] text-[1.5rem] font-semibold mt-8 mb-3">4. Contact Form and Email Delivery (Resend)</h2>
+        <p className="mb-4">If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry and in the event of follow-up questions. For the sending and processing of these emails, we use the service <strong>Resend</strong> (Resend Inc., 2261 Market Street #5039, San Francisco, CA 94114, USA). Resend is an email service provider that handles the technical delivery of messages. Your data is transmitted securely and encrypted to Resend's servers. Processing is based on Art. 6(1)(f) GDPR (legitimate interest in effective customer communication).</p>
+      </section>
+
+      <section>
+        <h2 className="text-[var(--color-white)] text-[1.5rem] font-semibold mt-8 mb-3">5. Analysis Tools (Google Analytics)</h2>
+        <p className="mb-4">This website uses functions of the web analytics service Google Analytics. The provider is Google Ireland Limited ("Google"), Gordon House, Barrow Street, Dublin 4, Ireland.</p>
+        <p className="mb-4">Google Analytics is only activated if you explicitly click "Accept" in the cookie banner (Art. 6(1)(a) GDPR). If you do not consent, no data will be transmitted to Google. Google Analytics uses so-called "cookies". These are text files that are stored on your computer and enable an analysis of your use of the website. The information generated by the cookie about your use of this website is usually transmitted to a Google server in the USA and stored there.</p>
+      </section>
+    </div>
+  );
+}
