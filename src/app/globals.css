@@ -102,3 +102,25 @@
   }
 }
 
+/* ---- Mermaid Overrides ---- */
+.mermaid text,
+.mermaid svg text,
+.mermaid .label,
+.mermaid .label text {
+  fill: var(--color-text) !important;
+  color: var(--color-text) !important;
+}
+
+.mermaid .edgeLabel,
+.mermaid .edgeLabel span,
+.mermaid .label span {
+  color: var(--color-text) !important;
+  background-color: var(--color-ink) !important;
+}
+
+.mermaid .edgeLabel rect {
+  fill: var(--color-ink) !important;
+  stroke: var(--color-border) !important;
+}
+
+
