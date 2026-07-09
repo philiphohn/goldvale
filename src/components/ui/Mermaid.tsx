@@ -18,10 +18,13 @@ export default function Mermaid({chart}: {chart: string}) {
           darkMode: true,
           background: '#0E1013', // --ink
           textColor: '#F5F2EA', // --text
-          lineColor: '#6C727C', // --text-muted
+          lineColor: '#F5F2EA', // --text (white lines)
+          defaultLinkColor: '#F5F2EA', // white flowchart connector lines
           primaryColor: '#CBA45C', // --gold
           primaryTextColor: '#0E1013', // dark text on gold background
-          primaryBorderColor: '#2C313A', // --border
+          primaryBorderColor: '#F5F2EA', // white borders
+          nodeBorder: '#F5F2EA', // white node outlines
+          clusterBorder: '#9AA0AA', // light grey subgraph borders
           secondaryColor: '#1B1E23', // --bg-raised
           tertiaryColor: '#22262C', // --bg-elevated
           fontFamily: 'var(--font-sans), system-ui, sans-serif',
