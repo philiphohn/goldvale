@@ -13,17 +13,35 @@ export default function Mermaid({chart}: {chart: string}) {
       const mermaid = (await import('mermaid')).default;
       mermaid.initialize({
         startOnLoad: false,
-        theme: 'dark',
+        theme: 'base',
         themeVariables: {
           darkMode: true,
           background: '#0E1013', // --ink
-          primaryColor: '#CBA45C', // --gold
-          primaryTextColor: '#F5F2EA', // --text
-          primaryBorderColor: '#2C313A', // --border
+          textColor: '#F5F2EA', // --text
           lineColor: '#6C727C', // --text-muted
+          primaryColor: '#CBA45C', // --gold
+          primaryTextColor: '#0E1013', // dark text on gold background
+          primaryBorderColor: '#2C313A', // --border
           secondaryColor: '#1B1E23', // --bg-raised
           tertiaryColor: '#22262C', // --bg-elevated
           fontFamily: 'var(--font-sans), system-ui, sans-serif',
+          // Timeline scale colors (from Goldvale infographic palette)
+          cScale0: '#CBA45C',
+          cScaleLabel0: '#0E1013',
+          cScale1: '#FF3E7F',
+          cScaleLabel1: '#F5F2EA',
+          cScale2: '#2FB6A8',
+          cScaleLabel2: '#0E1013',
+          cScale3: '#4C8DF0',
+          cScaleLabel3: '#F5F2EA',
+          cScale4: '#9B6CF0',
+          cScaleLabel4: '#F5F2EA',
+          cScale5: '#5CC98A',
+          cScaleLabel5: '#0E1013',
+          cScale6: '#F0894C',
+          cScaleLabel6: '#F5F2EA',
+          cScale7: '#46C6E0',
+          cScaleLabel7: '#0E1013',
         },
       });
 
