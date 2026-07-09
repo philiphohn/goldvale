@@ -3,6 +3,7 @@ import {MDXRemote} from 'next-mdx-remote/rsc';
 import {getPostBySlug, getPosts} from '@/lib/journal';
 import Reveal from '@/components/ui/Reveal';
 import {Link} from '@/i18n/routing';
+import Mermaid from '@/components/ui/Mermaid';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string; slug: string}>}) {
   const {locale, slug} = await params;
@@ -46,6 +47,21 @@ const mdxComponents = {
   strong: (props: any) => <strong className="font-semibold text-[var(--color-white)]" {...props} />,
   a: (props: any) => <a className="text-[var(--color-gold)] underline underline-offset-4 hover:text-[var(--color-gold-hi)] transition-colors" {...props} />,
   blockquote: (props: any) => <blockquote className="border-l-2 border-[var(--color-gold)] pl-[1.5rem] my-[2rem] italic text-[var(--color-white)] opacity-90" {...props} />,
+  pre: (props: any) => {
+    // Detect mermaid code blocks: <pre><code className="language-mermaid">...</code></pre>
+    const child = props.children;
+    if (child?.props?.className === 'language-mermaid') {
+      return <Mermaid chart={child.props.children as string} />;
+    }
+    return <pre className="bg-[var(--color-surface)] border border-[var(--color-line)] rounded-lg p-[1.5rem] my-[2rem] overflow-x-auto text-[0.95rem] leading-[1.6]" {...props} />;
+  },
+  code: (props: any) => {
+    // Inline code (not inside a pre)
+    if (!props.className) {
+      return <code className="bg-[var(--color-surface)] px-[0.4em] py-[0.15em] rounded text-[0.9em] text-[var(--color-gold)]" {...props} />;
+    }
+    return <code {...props} />;
+  },
 };
 
 export default async function BlogPostPage({params}: {params: Promise<{locale: string; slug: string}>}) {

@@ -44,7 +44,13 @@ export function getPosts(locale: string): Post[] {
 }
 
 export function getPostBySlug(slug: string, locale: string): Post | null {
-  const filePath = path.join(contentDir, locale, `${slug}.mdx`);
+  // Sanitize slug to prevent path traversal
+  const safeSlug = slug.replace(/[^a-zA-Z0-9_-]/g, '');
+  if (!safeSlug || safeSlug !== slug) {
+    return null;
+  }
+
+  const filePath = path.join(contentDir, locale, `${safeSlug}.mdx`);
   
   if (!fs.existsSync(filePath)) {
     return null;
@@ -54,7 +60,7 @@ export function getPostBySlug(slug: string, locale: string): Post | null {
   const { data, content } = matter(fileContent);
   
   return {
-    slug,
+    slug: safeSlug,
     title: data.title || '',
     date: data.date || '',
     category: data.category || '',
