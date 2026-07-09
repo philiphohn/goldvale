@@ -46,6 +46,39 @@ export default function Mermaid({chart}: {chart: string}) {
           cScale7: '#46C6E0',
           cScaleLabel7: '#0E1013',
         },
+        themeCSS: `
+          /* Ensure lines, connectors, and paths are visible */
+          line,
+          path,
+          .flowchart-link,
+          .edgePath .path,
+          .timeline-line,
+          .connector,
+          .transition {
+            stroke: var(--color-text-secondary) !important;
+          }
+
+          /* Arrowheads and markers */
+          marker path,
+          .arrowheadPath,
+          svg path[id*="arrowhead"] {
+            fill: var(--color-text-secondary) !important;
+            stroke: var(--color-text-secondary) !important;
+          }
+
+          /* Edge Labels text and background */
+          .edgeLabel,
+          .edgeLabel span,
+          .edgeLabel div {
+            color: var(--color-text) !important;
+            background-color: var(--color-ink) !important;
+          }
+
+          .edgeLabel rect {
+            fill: var(--color-ink) !important;
+            stroke: var(--color-border) !important;
+          }
+        `
       });
 
       const id = `mermaid-${Math.random().toString(36).slice(2, 9)}`;
@@ -77,7 +110,7 @@ export default function Mermaid({chart}: {chart: string}) {
   return (
     <div
       ref={containerRef}
-      className="my-8 p-6 border border-[var(--color-line)] rounded-lg bg-[var(--color-surface)] overflow-x-auto [&_svg]:mx-auto [&_svg]:max-w-full"
+      className="mermaid my-8 p-6 border border-[var(--color-line)] rounded-lg bg-[var(--color-surface)] overflow-x-auto [&_svg]:mx-auto [&_svg]:max-w-full"
       dangerouslySetInnerHTML={{__html: svg}}
     />
   );
