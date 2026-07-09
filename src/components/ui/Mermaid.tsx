@@ -16,13 +16,13 @@ export default function Mermaid({chart}: {chart: string}) {
         theme: 'dark',
         themeVariables: {
           darkMode: true,
-          background: '#0e0e10',
-          primaryColor: '#c9a54e',
-          primaryTextColor: '#f5f5f5',
-          primaryBorderColor: '#3a3a40',
-          lineColor: '#6f6f76',
-          secondaryColor: '#1a1a1e',
-          tertiaryColor: '#222226',
+          background: '#0E1013', // --ink
+          primaryColor: '#CBA45C', // --gold
+          primaryTextColor: '#F5F2EA', // --text
+          primaryBorderColor: '#2C313A', // --border
+          lineColor: '#6C727C', // --text-muted
+          secondaryColor: '#1B1E23', // --bg-raised
+          tertiaryColor: '#22262C', // --bg-elevated
           fontFamily: 'var(--font-sans), system-ui, sans-serif',
         },
       });
