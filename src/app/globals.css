@@ -1,18 +1,63 @@
 @import "tailwindcss";
 
 @theme inline {
+  /* ---- Foundation ---- */
+  --color-ink: #0E1013;
+  --color-bg: #14161A;
+  --color-bg-raised: #1B1E23;
+  --color-bg-elevated: #22262C;
+  --color-border: #2C313A;
+  --color-border-strong: #3A4049;
+
+  --color-text: #F5F2EA;
+  --color-text-secondary: #9AA0AA;
+  --color-text-muted: #6C727C;
+  --color-text-disabled: #565D68;
+
+  --color-gold: #CBA45C;
+  --color-gold-hi: #E8CE92;
+  --color-gold-deep: #8A6D34;
+  --color-magenta: #FF3E7F;
+  --color-magenta-hi: #FF6E9C;
+  --color-magenta-deep: #C42862;
+  --color-white: #F5F2EA;
+
+  /* ---- Semantic ---- */
+  --color-success: #4CC38A;
+  --color-success-bg: rgba(76, 195, 138, 0.14);
+  --color-success-fg: #7BD9AE;
+  --color-warning: #E8973C;
+  --color-warning-bg: rgba(232, 151, 60, 0.14);
+  --color-warning-fg: #EDB575;
+  --color-error: #F05656;
+  --color-error-bg: rgba(240, 86, 86, 0.14);
+  --color-error-fg: #F58585;
+  --color-info: #4CA6E8;
+  --color-info-bg: rgba(76, 166, 232, 0.14);
+  --color-info-fg: #7FC0EF;
+
+  /* ---- Chart · categorical ---- */
+  --color-chart-1: #CBA45C;
+  --color-chart-2: #FF3E7F;
+  --color-chart-3: #2FB6A8;
+  --color-chart-4: #4C8DF0;
+  --color-chart-5: #9B6CF0;
+  --color-chart-6: #5CC98A;
+  --color-chart-7: #F0894C;
+  --color-chart-8: #46C6E0;
+
+  /* Fonts */
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+
+  /* ---- Backward Compatibility Aliases ---- */
   --color-background: #14161A;
   --color-background-2: #1B1E23;
   --color-surface: #22262C;
   --color-line: #2C313A;
-  --color-gold: #CBA45C;
-  --color-gold-hi: #E8CE92;
-  --color-white: #F5F2EA;
+  --color-pop: #FF3E7F;
   --color-muted: #9AA0AA;
   --color-muted-2: #6C727C;
-  --color-pop: #FF3E7F;
-  --font-sans: var(--font-sans);
-  --font-serif: var(--font-serif);
 }
 
 :root {
@@ -28,15 +73,15 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: var(--color-background);
-    color: var(--color-white);
+    background-color: var(--color-bg);
+    color: var(--color-text);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
   ::selection {
-    background-color: var(--color-pop);
-    color: #fff;
+    background-color: var(--color-magenta);
+    color: var(--color-ink);
   }
 }
 
@@ -50,9 +95,10 @@
     font-size: 0.84rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--color-muted);
+    color: var(--color-text-secondary);
   }
   .sec {
     padding-block: clamp(5.5rem, 12vw, 10rem);
   }
 }
+
