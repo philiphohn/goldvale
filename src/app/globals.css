@@ -123,4 +123,22 @@
   stroke: var(--color-border) !important;
 }
 
+/* Ensure lines, connectors, and grid lines are light-grey and visible */
+.mermaid line,
+.mermaid path,
+.mermaid .flowchart-link,
+.mermaid .edgePath .path,
+.mermaid .timeline-line,
+.mermaid .transition {
+  stroke: var(--color-text-secondary) !important;
+}
+
+/* Arrowheads and markers */
+.mermaid marker path,
+.mermaid .arrowheadPath,
+.mermaid svg path[id*="arrowhead"] {
+  fill: var(--color-text-secondary) !important;
+  stroke: var(--color-text-secondary) !important;
+}
+
 
