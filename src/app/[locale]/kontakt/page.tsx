@@ -4,35 +4,13 @@ import ContactForm from '@/components/ui/ContactForm';
 import Button from '@/components/ui/Button';
 import Image from 'next/image';
 
-import {SITE_URL} from '@/lib/site-url';
+
+import {getPageMetadata} from '@/lib/routes';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   const t = await getTranslations({locale, namespace: 'Meta'});
-  const canonicalUrl = `${SITE_URL}/${locale}/kontakt`;
-  
-  const title = t('contact_title');
-  const description = t('contact_description');
-  
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        de: `${SITE_URL}/de/kontakt`,
-        en: `${SITE_URL}/en/kontakt`,
-        el: `${SITE_URL}/el/kontakt`,
-        'x-default': `${SITE_URL}/en/kontakt`,
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: canonicalUrl,
-      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
-    },
-  };
+  return getPageMetadata(locale as any, '/kontakt', t('contact_title'), t('contact_description'), false);
 }
 
 export default async function KontaktPage() {

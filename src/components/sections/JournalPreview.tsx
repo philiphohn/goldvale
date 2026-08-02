@@ -20,7 +20,7 @@ export default function JournalPreview() {
           {posts.map((post, index) => (
             <Reveal key={post.slug} delay={(index % 3) * 0.1}>
               <article>
-                <Link href={{pathname: '/journal/[slug]', params: {slug: post.slug}}} className="block border-t border-[var(--color-line)] pt-[1.4rem] transition-colors duration-400 hover:border-[var(--color-gold)] group">
+                <Link href={`/journal/${post.slug}`} className="block border-t border-[var(--color-line)] pt-[1.4rem] transition-colors duration-400 hover:border-[var(--color-gold)] group">
                   <div className="flex justify-between mono !text-[0.9rem] !tracking-[0.05em] mb-[1.3rem]">
                     <span className="text-[var(--color-gold)]">{post.category}</span>
                     <span>{new Date(post.date).getFullYear()}</span>

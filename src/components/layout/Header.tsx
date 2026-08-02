@@ -62,7 +62,7 @@ export default function Header() {
       <div className="hidden md:flex gap-[1.6rem] items-center justify-self-end">
         <div className="inline-flex items-center gap-[0.4rem] text-[0.92rem] tracking-[0.04em]" role="group" aria-label="Language switch">
           <Link
-            href={{pathname: pathname as any, params: params as any}}
+            href={{pathname: pathname as any, params: params as any} as any}
             locale="de"
             className={`transition-colors duration-300 ${locale === 'de' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted)] hover:text-[var(--color-white)]'}`}
           >
@@ -70,7 +70,7 @@ export default function Header() {
           </Link>
           <span className="text-[var(--color-muted-2)]">/</span>
           <Link
-            href={{pathname: pathname as any, params: params as any}}
+            href={{pathname: pathname as any, params: params as any} as any}
             locale="en"
             className={`transition-colors duration-300 ${locale === 'en' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted)] hover:text-[var(--color-white)]'}`}
           >
@@ -78,7 +78,7 @@ export default function Header() {
           </Link>
           <span className="text-[var(--color-muted-2)]">/</span>
           <Link
-            href={{pathname: pathname as any, params: params as any}}
+            href={{pathname: pathname as any, params: params as any} as any}
             locale="el"
             className={`transition-colors duration-300 ${locale === 'el' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted)] hover:text-[var(--color-white)]'}`}
           >
@@ -113,11 +113,14 @@ export default function Header() {
             <Link href="/kontakt" className="text-[var(--color-gold)]" onClick={() => setMenuOpen(false)}>{t('erstgespraech')}</Link>
           </div>
           <div className="inline-flex items-center gap-2 mt-4 pt-4 border-t border-[var(--color-line)]">
-            <Link href={{pathname: pathname as any, params: params as any}} locale="de" onClick={() => setMenuOpen(false)} className={locale === 'de' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted)]'}>DE</Link>
+            
+<Link href={{pathname: pathname as any, params: params as any} as any} locale="de" onClick={() => setMenuOpen(false)} className={locale === 'de' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted)]'}>DE</Link>
             <span className="text-[var(--color-muted-2)]">/</span>
-            <Link href={{pathname: pathname as any, params: params as any}} locale="en" onClick={() => setMenuOpen(false)} className={locale === 'en' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted)]'}>EN</Link>
+            
+<Link href={{pathname: pathname as any, params: params as any} as any} locale="en" onClick={() => setMenuOpen(false)} className={locale === 'en' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted)]'}>EN</Link>
             <span className="text-[var(--color-muted-2)]">/</span>
-            <Link href={{pathname: pathname as any, params: params as any}} locale="el" onClick={() => setMenuOpen(false)} className={locale === 'el' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted)]'}>EL</Link>
+            
+<Link href={{pathname: pathname as any, params: params as any} as any} locale="el" onClick={() => setMenuOpen(false)} className={locale === 'el' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted)]'}>EL</Link>
           </div>
         </div>
       )}

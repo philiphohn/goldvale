@@ -1,35 +1,13 @@
 import {getTranslations} from 'next-intl/server';
 import Reveal from '@/components/ui/Reveal';
 
-import {SITE_URL} from '@/lib/site-url';
+
+import {getPageMetadata} from '@/lib/routes';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   const t = await getTranslations({locale, namespace: 'Meta'});
-  const canonicalUrl = `${SITE_URL}/${locale}/studio`;
-  
-  const title = t('studio_title');
-  const description = t('studio_description');
-  
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        de: `${SITE_URL}/de/studio`,
-        en: `${SITE_URL}/en/studio`,
-        el: `${SITE_URL}/el/studio`,
-        'x-default': `${SITE_URL}/en/studio`,
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: canonicalUrl,
-      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
-    },
-  };
+  return getPageMetadata(locale as any, '/studio', t('studio_title'), t('studio_description'), false);
 }
 
 export default async function StudioDetailPage() {

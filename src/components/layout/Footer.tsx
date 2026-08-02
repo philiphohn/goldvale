@@ -61,11 +61,14 @@ export default function Footer() {
         <div className="flex justify-between flex-wrap gap-[1rem] mt-[3rem] mono tracking-[0.03em] text-[var(--color-muted-2)] !text-[0.82rem] !normal-case">
           <span>© 2026 Goldvale Studios</span>
           <div className="inline-flex items-center gap-[0.4rem] tracking-[0.04em]" role="group" aria-label="Language switch">
-            <Link href={{pathname: pathname as any, params: params as any}} locale="de" className={`transition-colors duration-300 uppercase ${locale === 'de' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted-2)] hover:text-[var(--color-white)]'}`}>DE</Link>
+            
+<Link href={{pathname: pathname as any, params: params as any} as any} locale="de" className={`transition-colors duration-300 uppercase ${locale === 'de' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted-2)] hover:text-[var(--color-white)]'}`}>DE</Link>
             <span className="text-[var(--color-muted-2)]">/</span>
-            <Link href={{pathname: pathname as any, params: params as any}} locale="en" className={`transition-colors duration-300 uppercase ${locale === 'en' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted-2)] hover:text-[var(--color-white)]'}`}>EN</Link>
+            
+<Link href={{pathname: pathname as any, params: params as any} as any} locale="en" className={`transition-colors duration-300 uppercase ${locale === 'en' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted-2)] hover:text-[var(--color-white)]'}`}>EN</Link>
             <span className="text-[var(--color-muted-2)]">/</span>
-            <Link href={{pathname: pathname as any, params: params as any}} locale="el" className={`transition-colors duration-300 uppercase ${locale === 'el' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted-2)] hover:text-[var(--color-white)]'}`}>EL</Link>
+            
+<Link href={{pathname: pathname as any, params: params as any} as any} locale="el" className={`transition-colors duration-300 uppercase ${locale === 'el' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted-2)] hover:text-[var(--color-white)]'}`}>EL</Link>
           </div>
           <span>{t('tagline')}</span>
         </div>

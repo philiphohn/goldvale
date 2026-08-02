@@ -2,35 +2,13 @@ import {getTranslations} from 'next-intl/server';
 import Reveal from '@/components/ui/Reveal';
 import {Link} from '@/i18n/routing';
 
-import {SITE_URL} from '@/lib/site-url';
+
+import {getPageMetadata} from '@/lib/routes';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   const t = await getTranslations({locale, namespace: 'Meta'});
-  const canonicalUrl = `${SITE_URL}/${locale}/leistungen`;
-  
-  const title = t('services_title');
-  const description = t('services_description');
-  
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        de: `${SITE_URL}/de/leistungen`,
-        en: `${SITE_URL}/en/leistungen`,
-        el: `${SITE_URL}/el/leistungen`,
-        'x-default': `${SITE_URL}/en/leistungen`,
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: canonicalUrl,
-      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
-    },
-  };
+  return getPageMetadata(locale as any, '/leistungen', t('services_title'), t('services_description'), false);
 }
 
 export default async function LeistungenDetailPage({params}: {params: Promise<{locale: string}>}) {

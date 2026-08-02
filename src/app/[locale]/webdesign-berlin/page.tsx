@@ -6,11 +6,10 @@ import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import { SITE_URL } from '@/lib/site-url';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  const isEn = locale === 'en';
-  const canonicalUrl = `${SITE_URL}/${locale}/webdesign-berlin`;
+import {getPageMetadata} from '@/lib/routes';
 
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
   const title = locale === 'en'
     ? 'Web Design Berlin | Digital Studio for High-Performance Websites'
     : locale === 'el'
@@ -23,25 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     ? 'Εξειδικευμένο web design & ανάπτυξη εφαρμογών στο Βερολίνο. Σχεδιάζουμε και αναπτύσσουμε ψηφιακά προϊόντα υψηλής απόδοσης.'
     : 'Maßgeschneidertes Webdesign & App-Entwicklung in Berlin. Wir konzipieren und entwickeln performante Websites und digitale Produkte für ambitionierte Marken.';
 
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        de: `${SITE_URL}/de/webdesign-berlin`,
-        en: `${SITE_URL}/en/webdesign-berlin`,
-        el: `${SITE_URL}/el/webdesign-berlin`,
-        'x-default': `${SITE_URL}/en/webdesign-berlin`,
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: canonicalUrl,
-      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
-    },
-  };
+  return getPageMetadata(locale as any, '/webdesign-berlin', title, description);
 }
 
 export default async function WebdesignBerlinPage({ params }: { params: Promise<{ locale: string }> }) {

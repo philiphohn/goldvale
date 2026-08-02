@@ -7,35 +7,13 @@ import ServicesSummary from '@/components/sections/ServicesSummary';
 import ContactPreview from '@/components/sections/ContactPreview';
 import JournalPreview from '@/components/sections/JournalPreview';
 
-import {SITE_URL} from '@/lib/site-url';
+
+import {getPageMetadata} from '@/lib/routes';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   const t = await getTranslations({locale, namespace: 'Meta'});
-  const canonicalUrl = `${SITE_URL}/${locale}`;
-  
-  const title = t('home_title');
-  const description = t('home_description');
-  
-  return {
-    title: { absolute: title },
-    description,
-    alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        de: `${SITE_URL}/de`,
-        en: `${SITE_URL}/en`,
-        el: `${SITE_URL}/el`,
-        'x-default': `${SITE_URL}/en`,
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: canonicalUrl,
-      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
-    },
-  };
+  return getPageMetadata(locale as any, '/', t('home_title'), t('home_description'), true);
 }
 
 export default async function Home() {

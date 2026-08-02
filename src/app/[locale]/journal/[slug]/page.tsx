@@ -4,7 +4,9 @@ import {getPostBySlug, getPosts} from '@/lib/journal';
 import Reveal from '@/components/ui/Reveal';
 import {Link} from '@/i18n/routing';
 import Mermaid from '@/components/ui/Mermaid';
-import { SITE_URL } from '@/lib/site-url';
+import {SITE_URL} from '@/lib/site-url';
+
+import {getPageMetadata} from '@/lib/routes';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string; slug: string}>}) {
   const {locale, slug} = await params;
@@ -16,12 +18,11 @@ export async function generateMetadata({params}: {params: Promise<{locale: strin
     };
   }
   
+  const baseMeta = getPageMetadata(locale as any, `/journal/${slug}`, post.title, post.excerpt);
   return {
-    title: `${post.title} — Goldvale Studios`,
-    description: post.excerpt,
+    ...baseMeta,
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
+      ...baseMeta.openGraph,
       type: 'article',
       publishedTime: post.date,
     },

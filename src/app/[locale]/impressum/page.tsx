@@ -1,35 +1,13 @@
 import {getTranslations} from 'next-intl/server';
 import Reveal from '@/components/ui/Reveal';
 
-import {SITE_URL} from '@/lib/site-url';
+
+import {getPageMetadata} from '@/lib/routes';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   const t = await getTranslations({locale, namespace: 'Footer'});
-  const canonicalUrl = `${SITE_URL}/${locale}/impressum`;
-  
-  const title = t('impressum');
-  const description = t('impressum');
-  
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        de: `${SITE_URL}/de/impressum`,
-        en: `${SITE_URL}/en/impressum`,
-        el: `${SITE_URL}/el/impressum`,
-        'x-default': `${SITE_URL}/en/impressum`,
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: canonicalUrl,
-      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
-    },
-  };
+  return getPageMetadata(locale as any, '/impressum', t('impressum'), t('impressum'), false);
 }
 
 export default async function ImpressumPage({params}: {params: Promise<{locale: string}>}) {

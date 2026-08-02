@@ -4,35 +4,13 @@ import Button from '@/components/ui/Button';
 import {Link} from '@/i18n/routing';
 import Image from 'next/image';
 
-import {SITE_URL} from '@/lib/site-url';
+
+import {getPageMetadata} from '@/lib/routes';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   const t = await getTranslations({locale, namespace: 'Meta'});
-  const canonicalUrl = `${SITE_URL}/${locale}/arbeiten`;
-  
-  const title = t('work_title');
-  const description = t('work_description');
-  
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        de: `${SITE_URL}/de/arbeiten`,
-        en: `${SITE_URL}/en/arbeiten`,
-        el: `${SITE_URL}/el/arbeiten`,
-        'x-default': `${SITE_URL}/en/arbeiten`,
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: canonicalUrl,
-      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
-    },
-  };
+  return getPageMetadata(locale as any, '/arbeiten', t('work_title'), t('work_description'), false);
 }
 
 export default async function ArbeitenDetailPage({ params }: { params: Promise<{ locale: string }> }) {

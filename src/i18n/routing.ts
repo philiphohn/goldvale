@@ -1,6 +1,19 @@
 import {defineRouting} from 'next-intl/routing';
 import {createNavigation} from 'next-intl/navigation';
 
+import {routeMap} from '@/lib/routes';
+
+const pathnames: Record<string, string | Record<string, string>> = {
+  '/': '/',
+  '/studio': '/studio',
+  '/journal': '/journal',
+  '/journal/[slug]': '/journal/[slug]',
+};
+
+Object.keys(routeMap).forEach(key => {
+  pathnames[key] = routeMap[key];
+});
+
 export const routing = defineRouting({
   // A list of all locales that are supported
   locales: ['en', 'de', 'el'],
@@ -9,39 +22,7 @@ export const routing = defineRouting({
   defaultLocale: 'de',
 
   // The `pathnames` object allows mapping internal paths to localized external paths
-  pathnames: {
-    '/': '/',
-    '/arbeiten': {
-      en: '/work',
-      de: '/arbeiten',
-      el: '/erga'
-    },
-    '/leistungen': {
-      en: '/services',
-      de: '/leistungen',
-      el: '/ypiresies'
-    },
-    '/hospitality': '/hospitality',
-    '/webdesign-berlin': '/webdesign-berlin',
-    '/studio': '/studio',
-    '/journal': '/journal',
-    '/journal/[slug]': '/journal/[slug]',
-    '/kontakt': {
-      en: '/contact',
-      de: '/kontakt',
-      el: '/epikoinonia'
-    },
-    '/impressum': {
-      en: '/imprint',
-      de: '/impressum',
-      el: '/nomika'
-    },
-    '/datenschutz': {
-      en: '/privacy',
-      de: '/datenschutz',
-      el: '/prostasia-dedomenon'
-    }
-  }
+  pathnames
 });
 
 // Lightweight wrappers around Next.js' navigation APIs

@@ -4,35 +4,13 @@ import Reveal from '@/components/ui/Reveal';
 import {Link} from '@/i18n/routing';
 import {getPosts} from '@/lib/journal';
 
-import {SITE_URL} from '@/lib/site-url';
+
+import {getPageMetadata} from '@/lib/routes';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   const t = await getTranslations({locale, namespace: 'Meta'});
-  const canonicalUrl = `${SITE_URL}/${locale}/journal`;
-  
-  const title = t('journal_title');
-  const description = t('journal_description');
-  
-  return {
-    title,
-    description,
-    alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        de: `${SITE_URL}/de/journal`,
-        en: `${SITE_URL}/en/journal`,
-        el: `${SITE_URL}/el/journal`,
-        'x-default': `${SITE_URL}/en/journal`,
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: canonicalUrl,
-      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
-    },
-  };
+  return getPageMetadata(locale as any, '/journal', t('journal_title'), t('journal_description'), false);
 }
 
 export default async function JournalPage({params}: {params: Promise<{locale: string}>}) {
@@ -51,7 +29,7 @@ export default async function JournalPage({params}: {params: Promise<{locale: st
           {posts.map((post, index) => (
             <Reveal key={post.slug} delay={(index % 3) * 0.1}>
               <article>
-                <Link href={{pathname: '/journal/[slug]', params: {slug: post.slug}}} className="block border-t border-[var(--color-line)] pt-[1.4rem] transition-colors duration-400 hover:border-[var(--color-gold)] group">
+                <Link href={`/journal/${post.slug}`} className="block border-t border-[var(--color-line)] pt-[1.4rem] transition-colors duration-400 hover:border-[var(--color-gold)] group">
                   <div className="flex justify-between mono !text-[0.9rem] !tracking-[0.05em] mb-[1.3rem]">
                     <span className="text-[var(--color-gold)]">{post.category}</span>
                     <span>{new Date(post.date).getFullYear()}</span>
