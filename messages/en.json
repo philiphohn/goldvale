@@ -2,6 +2,7 @@
   "Nav": {
     "arbeiten": "Work",
     "leistungen": "Services",
+    "hospitality": "Hospitality",
     "studio": "Studio",
     "journal": "Journal",
     "erstgespraech": "Let's Talk"
@@ -79,6 +80,7 @@
     "big_1": "let's build something ",
     "big_2": "that lasts. ",
     "col_studio": "Studio",
+    "col_industries": "Industries",
     "col_contact": "Contact",
     "col_social": "Social",
     "col_legal": "Legal",
@@ -91,6 +93,7 @@
     "lead": "Digital experiences that empower brands and delight users.",
     "cta_title": "Let's start your next project",
     "cta_desc": "We are always looking for new challenges.",
+    "cta_button": "Get in touch",
     "proj1_name": "Eventboot.de",
     "proj1_desc": "Rent the most exclusive event boats in Berlin. Houseboats and yachts for birthdays, weddings, and corporate events.",
     "proj1_tags": "Web App, Booking System, SEO",
@@ -136,5 +139,129 @@
     "accept": "Accept",
     "reject": "Decline",
     "policy": "Privacy Policy"
+  },
+  "hospitality": {
+    "meta": {
+      "title": "Websites for Hotels & Vacation Rentals | Goldvale Studios",
+      "description": "Direct bookings instead of OTA commissions: fast, multilingual websites for hotels, vacation rentals and short-term rental hosts — booking engine included.",
+      "og_title": "Websites for Hotels & Vacation Rentals — Direct Bookings, Not Commissions",
+      "og_description": "Digital presences for hosts: design, performance and booking integration from a single source."
+    },
+    "hero": {
+      "eyebrow": "Industry focus — Hospitality",
+      "h1": "websites for hotels and vacation rentals that convert into direct bookings.",
+      "lead": "Your guests find you through platforms — and you pay for every single booking. We build the presence that turns searchers into direct bookings: fast, multilingual, connected to your booking system, with imagery that shows your property the way it actually feels.",
+      "meta": "Boutique hotels · Vacation rentals · Villas & chalets · Serviced apartments",
+      "cta_primary": "Book an intro call",
+      "cta_secondary": "See hospitality projects"
+    },
+    "starting": {
+      "eyebrow": "01 — Starting point",
+      "h2": "visible on the platforms. invisible as a brand.",
+      "intro": "Booking.com and Airbnb deliver occupancy — but they don't deliver guest loyalty. The relationship belongs to the platform, the data belongs to the platform, and the price comparison happens right next to your listing. Your own website doesn't solve that by existing. It solves it by being better: faster to load, clearer to navigate, and more trustworthy than the platform your guest just came from.",
+      "p1_h3": "Commission on every booking",
+      "p1_text": "Every platform booking costs margin that's missing from your interiors, your staff and your guest experience.",
+      "p2_h3": "No direct relationship",
+      "p2_text": "Without your own booking flow there's no email address, no returning guest and no second season.",
+      "p3_h3": "Interchangeable presentation",
+      "p3_text": "Inside a platform grid every property looks the same. What makes yours special becomes a line of body copy.",
+      "p4_h3": "Ranking disadvantage",
+      "p4_text": "Slow website-builder pages lose against platforms that are technically optimised without compromise."
+    },
+    "services": {
+      "eyebrow": "02 — Services",
+      "h2": "what we build for hosts",
+      "intro": "Not a standard package — the building blocks that actually decide bookings in hospitality.",
+      "s1_h3": "direct booking website",
+      "s1_tags": ["UX / UI", "SCREEN DESIGN", "CONVERSION"],
+      "s1_text": "A booking flow that leaves no question open: availability, price, what's included and cancellation terms exactly where guests expect them. We make the path from first curiosity to confirmation as short as possible — without losing the calm a good property radiates.",
+      "s2_h3": "booking engine & channel manager",
+      "s2_tags": ["API INTEGRATION", "ICAL", "SYNC"],
+      "s2_text": "We connect the system you already use instead of pushing a new one on you. Availability and rates stay in sync with the platforms, double bookings are ruled out, and your team keeps working in the interface it knows.",
+      "s3_h3": "visual identity & imagery",
+      "s3_tags": ["BRANDING", "ART DIRECTION", "MOTION"],
+      "s3_text": "Spaces sell through atmosphere. We develop the visual identity, bring your image material into a consistent order and give your property a signature that also holds up beyond the booking page — on social, in newsletters, in the signage on site.",
+      "s4_h3": "multilingual & international guests",
+      "s4_tags": ["I18N", "HREFLANG", "LOCALISATION"],
+      "s4_text": "Guests book in their own language. We implement multilingual setups properly: dedicated URLs per language, clean hreflang markup, localised formats for dates, prices and addresses. No machine translation that costs you trust.",
+      "s5_h3": "local seo & visibility",
+      "s5_tags": ["SEO", "LOCAL", "STRUCTURED DATA"],
+      "s5_text": "We structure your site so search engines understand location, amenities, price range and ratings. Plus landing pages for the searches guests actually use to find your region — not the ones that look good in a keyword tool.",
+      "s6_h3": "performance & engineering",
+      "s6_tags": ["NEXT.JS", "CORE WEB VITALS", "HEADLESS CMS"],
+      "s6_text": "Large images and fast load times are not a contradiction when the architecture is right. We build on modern frameworks, serve content close to the guest and hand you a CMS where you can maintain rates, copy and galleries yourself.",
+      "all_services_link": "All services in detail"
+    },
+    "audiences": {
+      "eyebrow": "03 — Who we work with",
+      "h2": "who we work with",
+      "a1_h3": "boutique & design hotels",
+      "a1_text": "Properties with a point of view that want their positioning to be as precise online as it is on site.",
+      "a2_h3": "vacation rentals & holiday homes",
+      "a2_text": "Single properties looking to reduce platform dependency without risking occupancy.",
+      "a3_h3": "villas, chalets & premium properties",
+      "a3_text": "High-end properties where the decision is made through imagery, trust and depth of detail.",
+      "a4_h3": "serviced apartments & aparthotels",
+      "a4_text": "Multiple units, one presence: clear property structure, filterable availability, maintenance that scales.",
+      "a5_h3": "hosts with a portfolio",
+      "a5_text": "Anyone managing several properties or locations needs one system, not five separate websites."
+    },
+    "work": {
+      "eyebrow": "04 — Selected work",
+      "h2": "built for hospitality",
+      "intro": "A selection of projects where stays, bookings and rentals were the core of the brief.",
+      "p1_title": "Tolon House",
+      "p1_year": "2024",
+      "p1_tags": ["WEBSITE", "TOURISM", "DESIGN"],
+      "p1_desc": "Stylish, newly renovated Boho-style apartments in the heart of Tolo, Greece — featuring a presence that puts location and atmosphere front and center.",
+      "p2_title": "The Lakeside Loft",
+      "p2_year": "2024",
+      "p2_tags": ["WEBSITE", "BRANDING", "HOSPITALITY"],
+      "p2_desc": "An exclusive event boat in Berlin: brand, visual language and inquiry funnel for a one-of-a-kind property.",
+      "p3_title": "Filoxenos.gr",
+      "p3_year": "2026",
+      "p3_tags": ["PLATFORM", "API INTEGRATION", "PROPTECH"],
+      "p3_desc": "Platform for automating short-term rental declarations in Greece, with direct channel manager integrations — our signature touch where renting meets regulation.",
+      "all_projects_link": "All projects"
+    },
+    "process": {
+      "eyebrow": "05 — Process",
+      "h2": "how a project runs",
+      "step1_title": "Analysis",
+      "step1_desc": "We look at the property, the target guests, seasonality and your current booking sources — including an honest look at what already works.",
+      "step2_title": "Strategy",
+      "step2_desc": "Positioning, site structure, booking logic and language versions are defined before the first pixel exists.",
+      "step3_title": "Design & UX",
+      "step3_desc": "Imagery and interface are designed against your real content, not a placeholder template.",
+      "step4_title": "Build & launch",
+      "step4_desc": "Implementation, booking integration, measurement and handover — with a walkthrough that leaves your team able to work independently."
+    },
+    "statement": {
+      "eyebrow": "Perspective",
+      "text": "a guest decides in seconds whether a property suits them. the website is the first room they walk into."
+    },
+    "faq": {
+      "h2": "frequently asked questions",
+      "q1": "Is a custom website worth it if I'm fully booked on Airbnb and Booking.com?",
+      "a1": "Especially then. High occupancy via platforms means demand exists — you're just paying for every single booking. Your own booking engine shifts part of that existing demand into a commission-free channel and gives you direct guest relationships. It doesn't replace platforms, it complements them.",
+      "q2": "Can you connect my existing booking engine?",
+      "a2": "Usually yes. We work with common booking engines and channel managers, integrating them via APIs or embedded booking flows. If you don't use a system yet, we recommend one that fits your operation's size — rather than our invoice's size.",
+      "q3": "Do availability and rates stay in sync?",
+      "a3": "Yes. Your booking engine or channel manager remains the master source; the website displays its live data. This eliminates double bookings while keeping rate management in one place.",
+      "q4": "Can I edit copy, rates and images myself?",
+      "a4": "Yes. We implement a Headless CMS that allows you to manage content, galleries and seasonal rates without technical knowledge. Handover includes a walkthrough so your team can work independently.",
+      "q5": "How many languages make sense?",
+      "a5": "As many as you can genuinely maintain. Two cleanly translated languages look far more professional than five machine-translated ones. Technically, each language receives its own URL with proper hreflang markup so Google serves the right version.",
+      "q6": "How do I get found in Google for my local area?",
+      "a6": "Through three levers: a fast, technically clean website, content targeting what your guests actually search for (location, travel, seasons, occasions), and structured data that makes amenities, price ranges and reviews machine-readable. A fully managed Google Business Profile also plays a key role.",
+      "q7": "How long does implementation take?",
+      "a7": "That depends on scope: a single property is built much faster than a portfolio with multiple units and language versions. After the intro call, you'll receive a clear project schedule with fixed milestones.",
+      "q8": "Do you also cover legal requirements for short-term rentals?",
+      "a8": "We build the technical foundation: GDPR-compliant forms and analytics, cookie controls, proper pricing and service information, as well as fields for registration or permit numbers required in many regions for short-term rentals. The legal review of actual content remains with you or your legal counsel — we do not provide legal advice."
+    },
+    "cta": {
+      "h2": "let's talk about your property.",
+      "text": "We'll look at where you stand and tell you honestly what's worth doing — and what isn't. Free and without obligation."
+    }
   }
 }

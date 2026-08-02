@@ -20,19 +20,19 @@ export default function Mermaid({chart}: {chart: string}) {
           textColor: '#F5F2EA', // --text
           lineColor: '#F5F2EA', // --text (white lines)
           defaultLinkColor: '#F5F2EA', // white flowchart connector lines
-          primaryColor: '#CBA45C', // --gold
-          primaryTextColor: '#0E1013', // dark text on gold background
-          primaryBorderColor: '#F5F2EA', // white borders
+          primaryColor: '#FF3E7F', // --gold (now magenta hex)
+          primaryTextColor: '#F5F2EA', // light text on magenta background
+          primaryBorderColor: '#2C313A', // --border
           nodeBorder: '#F5F2EA', // white node outlines
           clusterBorder: '#9AA0AA', // light grey subgraph borders
           secondaryColor: '#1B1E23', // --bg-raised
           tertiaryColor: '#22262C', // --bg-elevated
           fontFamily: 'var(--font-sans), system-ui, sans-serif',
-          // Timeline scale colors (from Goldvale infographic palette)
-          cScale0: '#CBA45C',
-          cScaleLabel0: '#0E1013',
-          cScale1: '#FF3E7F',
-          cScaleLabel1: '#F5F2EA',
+          // Timeline scale colors (from Goldvale infographic palette, swapped)
+          cScale0: '#FF3E7F',
+          cScaleLabel0: '#F5F2EA',
+          cScale1: '#CBA45C',
+          cScaleLabel1: '#0E1013',
           cScale2: '#2FB6A8',
           cScaleLabel2: '#0E1013',
           cScale3: '#4C8DF0',

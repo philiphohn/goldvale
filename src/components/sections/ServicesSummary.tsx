@@ -44,6 +44,14 @@ export default function ServicesSummary() {
             </Reveal>
           ))}
         </div>
+        
+        <Reveal>
+          <div className="mt-[2.5rem] text-right">
+            <Link href="/hospitality" className="mono text-[0.92rem] text-[var(--color-gold)] border-b border-[var(--color-gold)] pb-[0.1em] hover:text-white hover:border-white transition-colors inline-block">
+              Branchenfokus: Hospitality →
+            </Link>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

@@ -3,7 +3,7 @@ import Reveal from '@/components/ui/Reveal';
 import ContactForm from '@/components/ui/ContactForm';
 import Image from 'next/image';
 
-export default function ContactPreview() {
+export default function ContactPreview({ source }: { source?: string }) {
   const t = useTranslations('Contact');
 
   return (
@@ -20,15 +20,15 @@ export default function ContactPreview() {
             </p>
             
             <div className="mt-[2rem] flex flex-col gap-[0.6rem]">
-              <a href="mailto:hello@goldvale.de" className="text-[1.15rem] text-[var(--color-white)] transition-colors duration-300 w-max border-b border-[var(--color-line)] pb-[0.1em] hover:text-[var(--color-pop)] hover:border-[var(--color-pop)]">
-                hello@goldvale.de
+              <a href="mailto:hello@goldvalestudios.com" className="text-[1.15rem] text-[var(--color-white)] transition-colors duration-300 w-max border-b border-[var(--color-line)] pb-[0.1em] hover:text-[var(--color-pop)] hover:border-[var(--color-pop)]">
+                hello@goldvalestudios.com
               </a>
               <a href="tel:+4915678412954" className="text-[1.15rem] text-[var(--color-white)] transition-colors duration-300 w-max border-b border-[var(--color-line)] pb-[0.1em] hover:text-[var(--color-pop)] hover:border-[var(--color-pop)]">
                 +49 15678 412954
               </a>
             </div>
             
-            <ContactForm />
+            <ContactForm source={source} />
           </Reveal>
           
           <Reveal delay={0.2} className="md:justify-self-end mt-12 md:mt-0">

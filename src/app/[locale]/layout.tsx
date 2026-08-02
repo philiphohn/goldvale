@@ -8,46 +8,74 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import CookieBanner from '@/components/ui/CookieBanner';
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics';
-import JsonLd from '@/components/seo/JsonLd';
+import StructuredData from '@/components/seo/StructuredData';
+import { SITE_URL } from '@/lib/site-url';
 
 const serif = Fraunces({
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   variable: '--font-serif',
   display: 'swap',
 });
 
 const sans = Hanken_Grotesk({
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   variable: '--font-sans',
   display: 'swap',
 });
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  const t = await getTranslations({locale, namespace: 'Nav'}); // Nav or maybe we can just create a global meta namespace? The Nav currently doesn't have a meta tag. Let's use hardcoded strings with locale check, or we already have Hero metadata.
 
-  const title = locale === 'en' ? 'Goldvale Studios — Digital Studio for Websites & Apps' : 'Goldvale Studios — Digitalstudio für Websites & App-Entwicklung';
-  const description = locale === 'en' ? 'We build high-converting websites, web apps, and digital brands for ambitious companies.' : 'Wir bauen hochkonvertierende Websites, Web-Apps und digitale Marken für ambitionierte Unternehmen.';
+  let title = 'Goldvale Studios — Digitalstudio für Websites & App-Entwicklung';
+  let description = 'Wir bauen hochkonvertierende Websites, Web-Apps und digitale Marken für ambitionierte Unternehmen.';
+
+  if (locale === 'en') {
+    title = 'Goldvale Studios — Digital Studio for Websites & Apps';
+    description = 'We build high-converting websites, web apps, and digital brands for ambitious companies.';
+  } else if (locale === 'el') {
+    title = 'Goldvale Studios — Ψηφιακό Studio για Websites & Εφαρμογές';
+    description = 'Δημιουργούμε υψηλής απόδοσης websites, web apps και ψηφιακά brands για φιλόδοξες επιχειρήσεις.';
+  }
+
+  const canonicalUrl = `${SITE_URL}/${locale}`;
 
   return {
-    metadataBase: new URL('https://goldvale.de'),
+    metadataBase: new URL(SITE_URL),
     title: {
       template: '%s | Goldvale Studios',
       default: title,
     },
     description: description,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        de: `${SITE_URL}/de`,
+        en: `${SITE_URL}/en`,
+        el: `${SITE_URL}/el`,
+        'x-default': `${SITE_URL}/en`,
+      },
+    },
     openGraph: {
-      title: 'Goldvale Studios',
+      title: title,
       description: description,
-      url: 'https://goldvale.de',
+      url: canonicalUrl,
       siteName: 'Goldvale Studios',
-      locale: locale === 'en' ? 'en_US' : 'de_DE',
+      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
       type: 'website',
+      images: [
+        {
+          url: '/opengraph-image.png',
+          width: 1200,
+          height: 630,
+          alt: 'Goldvale Studios Logo',
+        }
+      ]
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Goldvale Studios',
+      title: title,
       description: description,
+      images: ['/opengraph-image.png']
     },
   };
 }
@@ -76,7 +104,24 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${sans.variable} ${serif.variable}`}>
       <head>
-        <JsonLd />
+        <StructuredData />
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="msapplication-TileColor" content="#14161a" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#14161a" />
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
@@ -92,7 +137,7 @@ export default async function LocaleLayout({
             policy={tCookie('policy')}
           />
         </NextIntlClientProvider>
-        <GoogleAnalytics gaId="G-XXXXXXXXXX" />
+        <GoogleAnalytics gaId="G-1K7SKK4ZDS" />
       </body>
     </html>
   );

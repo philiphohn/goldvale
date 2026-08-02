@@ -1,15 +1,17 @@
+import { SITE_URL } from '@/lib/site-url';
+
 export default function JsonLd() {
-  const structuredData = {
+  const professionalServiceData = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
     name: 'Goldvale Studios',
     legalName: 'HBC Hohn Business Consulting UG (haftungsbeschränkt)',
-    url: 'https://goldvale.de',
-    logo: 'https://goldvale.de/opengraph-image.jpg',
-    image: 'https://goldvale.de/opengraph-image.jpg',
+    url: SITE_URL,
+    logo: `${SITE_URL}/opengraph-image.jpg`,
+    image: `${SITE_URL}/opengraph-image.jpg`,
     description: 'Goldvale Studios ist ein Digitalstudio für Websites, App-Entwicklung, Marken und Strategie.',
     telephone: '+4915678412954',
-    email: 'hello@goldvale.de',
+    email: 'hello@goldvalestudios.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Lerchenstraße 7',
@@ -31,10 +33,29 @@ export default function JsonLd() {
     ]
   };
 
+  const websiteData = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Goldvale Studios',
+    url: SITE_URL,
+    inLanguage: ['de', 'en'],
+    publisher: {
+      '@type': 'Organization',
+      name: 'Goldvale Studios',
+      url: SITE_URL
+    }
+  };
+
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteData) }}
+      />
+    </>
   );
 }

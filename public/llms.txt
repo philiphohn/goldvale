@@ -16,17 +16,18 @@ Goldvale Studios is a brand of **HBC Hohn Business Consulting UG (haftungsbeschr
 - **Representative:** Philip Hohn
 - **Address:** Lerchenstraße 7, 14089 Berlin, Germany
 - **Phone:** +49 15678 412954
-- **Email:** hello@goldvale.de
-- **Website:** https://goldvale.de
+- **Email:** hello@goldvalestudios.com
+- **Website:** https://www.goldvalestudios.com
 - **Commercial Register:** Amtsgericht Berlin (Charlottenburg), HRB 266039
 - **VAT ID:** DE369234361
 
 ## Navigation & Resources
-- **Homepage**: https://goldvale.de/
-- **Portfolio / Work**: https://goldvale.de/de/arbeiten
-- **Services**: https://goldvale.de/de/leistungen
-- **Studio Profile**: https://goldvale.de/de/studio
-- **Contact Us**: https://goldvale.de/de/kontakt
-- **Sitemap**: https://goldvale.de/sitemap.xml
+- **Homepage**: https://www.goldvalestudios.com/
+- **Portfolio / Work**: https://www.goldvalestudios.com/de/arbeiten
+- **Services**: https://www.goldvalestudios.com/de/leistungen
+- **Hospitality**: https://www.goldvalestudios.com/de/hospitality
+- **Studio Profile**: https://www.goldvalestudios.com/de/studio
+- **Contact Us**: https://www.goldvalestudios.com/de/kontakt
+- **Sitemap**: https://www.goldvalestudios.com/sitemap.xml
 
 *This document is optimized for LLMs and AI Agents.*

@@ -14,12 +14,12 @@
   --color-text-muted: #6C727C;
   --color-text-disabled: #565D68;
 
-  --color-gold: #CBA45C;
-  --color-gold-hi: #E8CE92;
-  --color-gold-deep: #8A6D34;
-  --color-magenta: #FF3E7F;
-  --color-magenta-hi: #FF6E9C;
-  --color-magenta-deep: #C42862;
+  --color-gold: #FF3E7F;
+  --color-gold-hi: #FF6E9C;
+  --color-gold-deep: #C42862;
+  --color-magenta: #CBA45C;
+  --color-magenta-hi: #E8CE92;
+  --color-magenta-deep: #8A6D34;
   --color-white: #F5F2EA;
 
   /* ---- Semantic ---- */
@@ -37,8 +37,8 @@
   --color-info-fg: #7FC0EF;
 
   /* ---- Chart · categorical ---- */
-  --color-chart-1: #CBA45C;
-  --color-chart-2: #FF3E7F;
+  --color-chart-1: #FF3E7F;
+  --color-chart-2: #CBA45C;
   --color-chart-3: #2FB6A8;
   --color-chart-4: #4C8DF0;
   --color-chart-5: #9B6CF0;
@@ -55,13 +55,13 @@
   --color-background-2: #1B1E23;
   --color-surface: #22262C;
   --color-line: #2C313A;
-  --color-pop: #FF3E7F;
+  --color-pop: #CBA45C;
   --color-muted: #9AA0AA;
   --color-muted-2: #6C727C;
 }
 
 :root {
-  --pop-rgb: 255, 62, 127;
+  --pop-rgb: 203, 164, 92;
   --bg-rgb: 20, 22, 26;
 }
 

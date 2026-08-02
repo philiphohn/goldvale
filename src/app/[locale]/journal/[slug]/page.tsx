@@ -4,6 +4,7 @@ import {getPostBySlug, getPosts} from '@/lib/journal';
 import Reveal from '@/components/ui/Reveal';
 import {Link} from '@/i18n/routing';
 import Mermaid from '@/components/ui/Mermaid';
+import { SITE_URL } from '@/lib/site-url';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string; slug: string}>}) {
   const {locale, slug} = await params;
@@ -80,8 +81,39 @@ export default async function BlogPostPage({params}: {params: Promise<{locale: s
     day: 'numeric'
   }).format(dateObj);
 
+  const blogPostingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    author: {
+      '@type': 'Person',
+      name: 'Philip Hohn',
+      url: `${SITE_URL}/${locale}/studio`
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Goldvale Studios',
+      url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/opengraph-image.jpg`
+      }
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${SITE_URL}/${locale}/journal/${slug}`
+    }
+  };
+
   return (
-    <article className="pt-32 pb-32 min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+      <article className="pt-32 pb-32 min-h-screen">
       <div className="wrap max-w-[850px]">
         <Reveal>
           <div className="mb-[1rem]">
@@ -117,5 +149,6 @@ export default async function BlogPostPage({params}: {params: Promise<{locale: s
         </Reveal>
       </div>
     </article>
+    </>
   );
 }

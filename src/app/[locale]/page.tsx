@@ -9,10 +9,14 @@ import JournalPreview from '@/components/sections/JournalPreview';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  const t = await getTranslations({locale, namespace: 'Nav'});
+  const isEn = locale === 'en';
   return {
-    title: 'Goldvale Studios — Digitalstudio für Websites & App-Entwicklung',
-    description: 'Goldvale Studios ist ein Digitalstudio für Websites, App-Entwicklung, Marken und Strategie.',
+    title: isEn
+      ? 'Goldvale Studios — Digital Studio for Websites & Apps'
+      : 'Goldvale Studios — Digitalstudio für Websites & Apps',
+    description: isEn
+      ? 'High-end websites, app development & brand strategy for ambitious companies. Schedule your intro call.'
+      : 'High-End Websites, App-Entwicklung & Markenstrategie für ambitionierte Unternehmen. Jetzt Erstgespräch vereinbaren.',
   };
 }
 
@@ -27,10 +31,10 @@ export default async function Home() {
       {/* Logos */}
       <aside className="border-y border-[var(--color-line)] py-[clamp(2.5rem,5vw,3.5rem)]">
         <div className="wrap">
-          <p className="mono !text-[0.82rem] !tracking-[0.12em] text-[var(--color-muted-2)] mb-[2rem] text-center">Unternehmen, die auf Goldvale vertrauen · Platzhalter</p>
+          <p className="mono !text-[0.82rem] !tracking-[0.12em] text-[var(--color-muted-2)] mb-[2rem] text-center">Projekte &amp; Kunden</p>
           <Reveal>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-y-[2rem] gap-x-[1rem] items-center justify-items-center">
-              {['Meridian', 'Norda', 'Vorwerk', 'Lumen', 'Atelier N.', 'Kaufmann', 'Helios', 'Brandt', 'Continu', 'Falkner', 'Möller&Co', 'Ostwind'].map((logo, i) => (
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-y-[2rem] gap-x-[1rem] items-center justify-items-center">
+              {['Tolon House', 'The Lakeside Loft', 'Eventboot', 'Faultr.ai', 'Filoxenos'].map((logo, i) => (
                 <span key={i} className="font-serif font-normal text-[clamp(1.15rem,1.7vw,1.5rem)] tracking-[0.02em] text-[var(--color-muted)] opacity-60 transition-all duration-300 hover:opacity-100 hover:text-[var(--color-white)]">
                   {logo}
                 </span>

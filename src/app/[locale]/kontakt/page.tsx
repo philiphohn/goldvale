@@ -6,10 +6,14 @@ import Image from 'next/image';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  const t = await getTranslations({locale, namespace: 'Nav'});
+  const isEn = locale === 'en';
   return {
-    title: t('erstgespraech') + ' — Goldvale Studios',
-    description: 'Kontaktieren Sie Goldvale Studios.',
+    title: isEn
+      ? 'Book an Intro Call | Goldvale Studios'
+      : 'Erstgespräch vereinbaren | Goldvale Studios',
+    description: isEn
+      ? 'Schedule a free, non-binding consultation about your next digital project with founder Philip Hohn.'
+      : 'Lassen Sie uns über Ihr nächstes Projekt sprechen. Unverbindliches und kostenloses Erstgespräch mit Gründer Philip Hohn.',
   };
 }
 
@@ -30,8 +34,8 @@ export default async function KontaktPage() {
             </p>
             
             <div className="mt-[2rem] flex flex-col gap-[0.6rem]">
-              <a href="mailto:hello@goldvale.de" className="text-[1.15rem] text-[var(--color-white)] transition-colors duration-300 w-max border-b border-[var(--color-line)] pb-[0.1em] hover:text-[var(--color-pop)] hover:border-[var(--color-pop)]">
-                hello@goldvale.de
+              <a href="mailto:hello@goldvalestudios.com" className="text-[1.15rem] text-[var(--color-white)] transition-colors duration-300 w-max border-b border-[var(--color-line)] pb-[0.1em] hover:text-[var(--color-pop)] hover:border-[var(--color-pop)]">
+                hello@goldvalestudios.com
               </a>
               <a href="tel:+4915678412954" className="text-[1.15rem] text-[var(--color-white)] transition-colors duration-300 w-max border-b border-[var(--color-line)] pb-[0.1em] hover:text-[var(--color-pop)] hover:border-[var(--color-pop)]">
                 +49 15678 412954

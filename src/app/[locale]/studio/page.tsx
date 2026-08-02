@@ -3,10 +3,14 @@ import Reveal from '@/components/ui/Reveal';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  const t = await getTranslations({locale, namespace: 'StudioDetail'});
+  const isEn = locale === 'en';
   return {
-    title: t('title') + ' — Goldvale Studios',
-    description: t('lead'),
+    title: isEn
+      ? 'The Studio — Digital Strategy & Engineering | Goldvale Studios'
+      : 'Das Studio — Digitalstrategie & Engineering | Goldvale Studios',
+    description: isEn
+      ? 'A team of strategic thinkers, designers, and developers with a shared vision: digital excellence and sustainable growth.'
+      : 'Erfahren Sie mehr über unsere Arbeitsweise, Werte und Philosophie für nachhaltigen digitalen Erfolg.',
   };
 }
 

@@ -1,5 +1,5 @@
 {
-  "name": "goldvale.de",
+  "name": "goldvalestudios.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,8 +17,7 @@
     "next-intl": "^4.13.1",
     "next-mdx-remote": "^6.0.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "resend": "^6.17.2"
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

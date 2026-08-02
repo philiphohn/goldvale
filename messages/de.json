@@ -2,6 +2,7 @@
   "Nav": {
     "arbeiten": "Arbeiten",
     "leistungen": "Leistungen",
+    "hospitality": "Hospitality",
     "studio": "Studio",
     "journal": "Journal",
     "erstgespraech": "Erstgespräch"
@@ -79,6 +80,7 @@
     "big_1": "lassen sie uns etwas ",
     "big_2": "bleibendes bauen. ",
     "col_studio": "Studio",
+    "col_industries": "Branchen",
     "col_contact": "Kontakt",
     "col_social": "Social",
     "col_legal": "Rechtliches",
@@ -91,6 +93,7 @@
     "lead": "Digitale Erlebnisse, die Marken stärken und Nutzer begeistern.",
     "cta_title": "Starten wir Ihr nächstes Projekt",
     "cta_desc": "Wir sind immer auf der Suche nach neuen Herausforderungen.",
+    "cta_button": "Kontakt aufnehmen",
     "proj1_name": "Eventboot.de",
     "proj1_desc": "Mieten Sie die exklusivsten Eventboote in Berlin. Hausboote und Yachten für Geburtstage, Hochzeiten und Firmenfeiern.",
     "proj1_tags": "Web-App, Buchungssystem, SEO",
@@ -136,5 +139,129 @@
     "accept": "Akzeptieren",
     "reject": "Ablehnen",
     "policy": "Datenschutzerklärung"
+  },
+  "hospitality": {
+    "meta": {
+      "title": "Websites für Hotels & Ferienwohnungen | Goldvale Studios",
+      "description": "Direktbuchungen statt Provisionen: Wir bauen schnelle, mehrsprachige Websites für Hotels, Ferienwohnungen und Ferienvermieter — mit Buchungssystem-Anbindung.",
+      "og_title": "Websites für Hotels & Ferienwohnungen — Direktbuchungen statt Provisionen",
+      "og_description": "Digitale Auftritte für Gastgeber: Design, Performance und Buchungsintegration aus einer Hand."
+    },
+    "hero": {
+      "eyebrow": "Branchenfokus — Hospitality",
+      "h1": "websites für hotels und ferienwohnungen, die direkt buchen lassen.",
+      "lead": "Ihre Gäste finden Sie heute über Portale — und Sie zahlen dafür bei jeder Buchung. Wir bauen den Auftritt, der aus Suchenden Direktbuchungen macht: schnell, mehrsprachig, mit angebundenem Buchungssystem und einer Bildsprache, die Ihr Haus so zeigt, wie es sich anfühlt.",
+      "meta": "Boutique-Hotels · Ferienwohnungen · Villen & Chalets · Serviced Apartments",
+      "cta_primary": "Erstgespräch vereinbaren",
+      "cta_secondary": "Hospitality-Projekte ansehen"
+    },
+    "starting": {
+      "eyebrow": "01 — Ausgangslage",
+      "h2": "sichtbar auf den portalen. unsichtbar als marke.",
+      "intro": "Booking.com und Airbnb bringen Auslastung — aber sie bringen keine Gästebindung. Die Beziehung gehört der Plattform, die Daten gehören der Plattform, und der Preisvergleich findet direkt neben Ihrem Angebot statt. Eine eigene Website löst das nicht durch Existenz, sondern durch Qualität: Sie muss schneller laden, klarer führen und mehr Vertrauen erzeugen als das Portal, aus dem der Gast gerade kommt.",
+      "p1_h3": "Provision pro Buchung",
+      "p1_text": "Jede Portalbuchung kostet Marge, die in Ausstattung, Personal und Gästeerlebnis fehlt.",
+      "p2_h3": "Kein Direktkontakt",
+      "p2_text": "Ohne eigene Buchungsstrecke gibt es keine E-Mail-Adresse, keinen Stammgast und keine zweite Saison.",
+      "p3_h3": "Austauschbare Darstellung",
+      "p3_text": "Im Raster des Portals sieht jedes Haus gleich aus. Ihre Besonderheit wird zur Zeile im Fließtext.",
+      "p4_h3": "Ranking-Nachteil",
+      "p4_text": "Langsame Baukasten-Seiten verlieren gegen Portale, die technisch kompromisslos optimiert sind."
+    },
+    "services": {
+      "eyebrow": "02 — Leistungen",
+      "h2": "was wir für gastgeber bauen",
+      "intro": "Kein Standardpaket, sondern die Bausteine, die im Gastgewerbe tatsächlich über Buchungen entscheiden.",
+      "s1_h3": "direktbuchungs-website",
+      "s1_tags": ["UX / UI", "SCREENDESIGN", "CONVERSION"],
+      "s1_text": "Eine Buchungsstrecke, die keine Fragen offen lässt: Verfügbarkeit, Preis, Leistungen und Stornobedingungen dort, wo der Gast sie erwartet. Wir gestalten den Weg von der ersten Neugier bis zur Bestätigung so kurz wie möglich — ohne die Ruhe zu verlieren, die ein gutes Haus ausstrahlt.",
+      "s2_h3": "buchungssystem & channel manager",
+      "s2_tags": ["API-INTEGRATION", "ICAL", "SYNC"],
+      "s2_text": "Wir binden Ihr bestehendes System an, statt Ihnen ein neues aufzudrängen. Verfügbarkeiten und Preise bleiben synchron mit den Portalen, Doppelbuchungen sind ausgeschlossen, und Ihr Team arbeitet weiter in der Oberfläche, die es kennt.",
+      "s3_h3": "bildsprache & markenauftritt",
+      "s3_tags": ["BRANDING", "ART DIRECTION", "MOTION"],
+      "s3_text": "Räume verkaufen sich über Atmosphäre. Wir entwickeln die visuelle Identität, bringen Ihr Bildmaterial in eine konsistente Ordnung und geben Ihrem Haus eine Handschrift, die auch außerhalb der Buchungsseite trägt — auf Social Media, in Newslettern, in der Beschilderung vor Ort.",
+      "s4_h3": "mehrsprachigkeit & internationale gäste",
+      "s4_tags": ["I18N", "HREFLANG", "LOKALISIERUNG"],
+      "s4_text": "Gäste buchen in ihrer Sprache. Wir setzen Mehrsprachigkeit technisch korrekt um — eigene URLs pro Sprache, saubere Hreflang-Auszeichnung, lokalisierte Formate für Datum, Preis und Adresse. Keine automatische Übersetzung, die Vertrauen kostet.",
+      "s5_h3": "local seo & sichtbarkeit",
+      "s5_tags": ["SEO", "LOCAL", "STRUKTURIERTE DATEN"],
+      "s5_text": "Wir strukturieren Ihre Seite so, dass Suchmaschinen Lage, Ausstattung, Preisrahmen und Bewertungen verstehen. Dazu kommen Landingpages für die Suchanfragen, mit denen Gäste Ihre Region tatsächlich finden — nicht die, die in einem Keyword-Tool gut aussehen.",
+      "s6_h3": "performance & technik",
+      "s6_tags": ["NEXT.JS", "CORE WEB VITALS", "HEADLESS CMS"],
+      "s6_text": "Große Bilder und schnelle Ladezeiten sind kein Widerspruch, wenn die Architektur stimmt. Wir bauen auf modernen Frameworks, liefern Inhalte nah am Gast aus und geben Ihnen ein Redaktionssystem, in dem Sie Preise, Texte und Galerien selbst pflegen können.",
+      "all_services_link": "Alle Leistungen im Detail"
+    },
+    "audiences": {
+      "eyebrow": "03 — Zielgruppen",
+      "h2": "für wen wir arbeiten",
+      "a1_h3": "boutique-hotels & design-hotels",
+      "a1_text": "Häuser mit Haltung, die ihre Positionierung digital genauso präzise zeigen wollen wie vor Ort.",
+      "a2_h3": "ferienwohnungen & ferienhäuser",
+      "a2_text": "Einzelobjekte, die aus der Portal-Abhängigkeit heraus wollen, ohne ihre Auslastung zu riskieren.",
+      "a3_h3": "villen, chalets & premium-objekte",
+      "a3_text": "Objekte im oberen Preissegment, bei denen die Entscheidung über Bilder, Vertrauen und Detailtiefe fällt.",
+      "a4_h3": "serviced apartments & aparthotels",
+      "a4_text": "Mehrere Einheiten, ein Auftritt: klare Objektstruktur, filterbare Verfügbarkeit, skalierbare Pflege.",
+      "a5_h3": "gastgeber mit portfolio",
+      "a5_text": "Wer mehrere Objekte oder Standorte verwaltet, braucht ein System statt fünf einzelner Websites."
+    },
+    "work": {
+      "eyebrow": "04 — Referenzen",
+      "h2": "gebaut für das gastgewerbe",
+      "intro": "Auszug aus Projekten, in denen Aufenthalt, Buchung und Vermietung im Zentrum standen.",
+      "p1_title": "Tolon House",
+      "p1_year": "2024",
+      "p1_tags": ["WEBSITE", "TOURISMUS", "DESIGN"],
+      "p1_desc": "Stilvolle, frisch renovierte Apartments im Herzen von Tolo, Griechenland — mit einem Auftritt, der Lage und Atmosphäre in den Mittelpunkt stellt.",
+      "p2_title": "The Lakeside Loft",
+      "p2_year": "2024",
+      "p2_tags": ["WEBSITE", "BRANDING", "HOSPITALITY"],
+      "p2_desc": "Ein exklusives Eventboot in Berlin: Marke, Bildsprache und Anfragestrecke für ein Objekt, das es so kein zweites Mal gibt.",
+      "p3_title": "Filoxenos.gr",
+      "p3_year": "2026",
+      "p3_tags": ["PLATTFORM", "API-INTEGRATION", "PROPTECH"],
+      "p3_desc": "Plattform zur Automatisierung von Kurzzeitmiet-Erklärungen in Griechenland, mit direkten Channel-Manager-Integrationen — unsere Handschrift auch dort, wo Vermietung zur Regulierung trifft.",
+      "all_projects_link": "Alle Projekte"
+    },
+    "process": {
+      "eyebrow": "05 — Ablauf",
+      "h2": "wie ein projekt abläuft",
+      "step1_title": "Analyse",
+      "step1_desc": "Wir sehen uns Objekt, Zielgruppe, Saisonalität und Ihre aktuellen Buchungsquellen an — inklusive einem ehrlichen Blick auf das, was bereits funktioniert.",
+      "step2_title": "Strategie",
+      "step2_desc": "Positionierung, Seitenstruktur, Buchungslogik und Sprachversionen werden festgelegt, bevor das erste Pixel entsteht.",
+      "step3_title": "Design & UX",
+      "step3_desc": "Bildsprache und Interface entstehen am konkreten Inhalt Ihres Hauses, nicht an einem Platzhalter-Template.",
+      "step4_title": "Entwicklung & Launch",
+      "step4_desc": "Umsetzung, Buchungsanbindung, Messbarkeit und Übergabe — mit einer Einweisung, nach der Ihr Team selbstständig arbeiten kann."
+    },
+    "statement": {
+      "eyebrow": "Haltung",
+      "text": "ein gast entscheidet in sekunden, ob ein haus zu ihm passt. die website ist der erste raum, den er betritt."
+    },
+    "faq": {
+      "h2": "häufige fragen",
+      "q1": "Lohnt sich eine eigene Website, wenn ich über Airbnb und Booking.com gut ausgebucht bin?",
+      "a1": "Gerade dann. Hohe Auslastung über Portale bedeutet, dass Nachfrage vorhanden ist — Sie zahlen nur bei jeder Buchung dafür. Eine eigene Buchungsstrecke verschiebt einen Teil dieser bereits existierenden Nachfrage in einen Kanal ohne Provision und gibt Ihnen den direkten Kontakt zum Gast. Sie ersetzt die Portale nicht, sie ergänzt sie.",
+      "q2": "Können Sie mein bestehendes Buchungssystem anbinden?",
+      "a2": "In der Regel ja. Wir arbeiten mit den gängigen Systemen und Channel Managern und binden sie über deren Schnittstellen oder als eingebettete Buchungsstrecke an. Falls noch kein System im Einsatz ist, empfehlen wir eines, das zur Größe Ihres Betriebs passt — statt zur Größe unserer Rechnung.",
+      "q3": "Bleiben Verfügbarkeiten und Preise synchron?",
+      "a3": "Ja. Ihr Buchungssystem oder Channel Manager bleibt die führende Quelle, die Website zeigt dessen Daten an. Dadurch entstehen keine Doppelbuchungen und Sie pflegen Preise weiterhin an einer Stelle.",
+      "q4": "Kann ich Texte, Preise und Bilder selbst ändern?",
+      "a4": "Ja. Wir setzen ein Headless CMS ein, in dem Sie Inhalte, Galerien und Saisontexte ohne technisches Wissen pflegen. Zur Übergabe gehört eine Einweisung, damit Ihr Team direkt arbeiten kann.",
+      "q5": "Wie viele Sprachen sind sinnvoll?",
+      "a5": "So viele, wie Sie inhaltlich wirklich pflegen können. Zwei sauber übersetzte Sprachen wirken professioneller als fünf maschinell erzeugte. Technisch bekommt jede Sprache eine eigene URL mit korrekter Hreflang-Auszeichnung, damit Google die passende Version ausliefert.",
+      "q6": "Wie werde ich in Google für meine Region gefunden?",
+      "a6": "Über drei Hebel: eine technisch saubere, schnelle Seite, Inhalte zu den Suchanfragen Ihrer Gäste — Lage, Anreise, Jahreszeit, Anlass — und strukturierte Daten, die Ausstattung, Preisrahmen und Bewertungen maschinenlesbar machen. Ergänzend spielt ein vollständig gepflegtes Google-Unternehmensprofil eine wesentliche Rolle.",
+      "q7": "Wie lange dauert die Umsetzung?",
+      "a7": "Das hängt vom Umfang ab: Ein einzelnes Objekt ist deutlich schneller umgesetzt als ein Portfolio mit mehreren Einheiten und Sprachversionen. Nach dem Erstgespräch erhalten Sie einen konkreten Zeitplan mit festen Meilensteinen.",
+      "q8": "Übernehmen Sie auch rechtliche Pflichtangaben für die Kurzzeitvermietung?",
+      "a8": "Wir bauen die technische Grundlage: DSGVO-konforme Formulare und Analyse, Cookie-Steuerung, korrekte Preis- und Leistungsangaben sowie Felder für Registrierungs- oder Meldenummern, wie sie in vielen Regionen für die Kurzzeitvermietung vorgeschrieben sind. Die rechtliche Prüfung der Inhalte selbst bleibt bei Ihnen oder Ihrer Rechtsberatung — dazu geben wir keine Rechtsauskunft."
+    },
+    "cta": {
+      "h2": "sprechen wir über ihr haus.",
+      "text": "Wir sehen uns Ihre aktuelle Situation an und sagen Ihnen ehrlich, was sich lohnt — und was nicht. Unverbindlich und kostenlos."
+    }
   }
 }

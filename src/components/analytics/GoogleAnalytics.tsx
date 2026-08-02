@@ -10,9 +10,7 @@ export default function GoogleAnalytics({ gaId }: { gaId: string }) {
     // Check initial state
     const checkConsent = () => {
       const consent = localStorage.getItem('cookie_consent_analytics');
-      if (consent === 'true') {
-        setConsentGranted(true);
-      }
+      setConsentGranted(consent === 'true');
     };
     
     checkConsent();

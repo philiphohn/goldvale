@@ -32,7 +32,7 @@ export default function PrivacyPolicyDE() {
           14089 Berlin<br />
           Deutschland<br /><br />
           Telefon: +49 15678 412954<br />
-          E-Mail: hello@goldvale.de
+          E-Mail: hello@goldvalestudios.com
         </p>
       </section>
 

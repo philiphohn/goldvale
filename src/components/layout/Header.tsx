@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import {useEffect, useState} from 'react';
 import {useTranslations, useLocale} from 'next-intl';
 import {Link, usePathname} from '@/i18n/routing';
@@ -36,6 +37,9 @@ export default function Header() {
         <Link href="/leistungen" className="relative text-[1rem] tracking-[0.02em] text-[var(--color-muted)] transition-colors duration-300 hover:text-[var(--color-white)] after:content-[''] after:absolute after:left-0 after:-bottom-[5px] after:h-[1px] after:w-0 after:bg-[var(--color-pop)] after:transition-all after:duration-350 hover:after:w-full">
           {t('leistungen')}
         </Link>
+        <Link href="/hospitality" className="relative text-[1rem] tracking-[0.02em] text-[var(--color-muted)] transition-colors duration-300 hover:text-[var(--color-white)] after:content-[''] after:absolute after:left-0 after:-bottom-[5px] after:h-[1px] after:w-0 after:bg-[var(--color-pop)] after:transition-all after:duration-350 hover:after:w-full">
+          {t('hospitality')}
+        </Link>
         <Link href="/studio" className="relative text-[1rem] tracking-[0.02em] text-[var(--color-muted)] transition-colors duration-300 hover:text-[var(--color-white)] after:content-[''] after:absolute after:left-0 after:-bottom-[5px] after:h-[1px] after:w-0 after:bg-[var(--color-pop)] after:transition-all after:duration-350 hover:after:w-full">
           {t('studio')}
         </Link>
@@ -44,13 +48,15 @@ export default function Header() {
         </Link>
       </div>
 
-      <Link href="/" className="flex items-center gap-[0.6rem] justify-self-start md:justify-self-center group" aria-label="Goldvale Studios">
-        <svg viewBox="0 0 32 32" fill="none" stroke="var(--color-gold)" strokeWidth="1.4" className="w-[24px] h-[24px]">
-          <path d="M4 22 Q16 6 28 22" />
-          <path d="M8 24 Q16 12 24 24" opacity=".7" />
-          <path d="M12 26 Q16 18 20 26" opacity=".45" />
-        </svg>
-        <b className="font-semibold text-[1.18rem] tracking-[-0.01em]">goldvale</b>
+      <Link href="/" className="flex items-center justify-self-start md:justify-self-center group py-1" aria-label="Goldvale Studios">
+        <Image
+          src="/images/goldvalestudios.svg"
+          alt="Goldvale Studios"
+          width={240}
+          height={90}
+          className="h-[70px] md:h-[80px] w-auto object-contain transition-opacity duration-300 group-hover:opacity-90"
+          priority
+        />
       </Link>
 
       <div className="hidden md:flex gap-[1.6rem] items-center justify-self-end">
@@ -69,6 +75,14 @@ export default function Header() {
             className={`transition-colors duration-300 ${locale === 'en' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted)] hover:text-[var(--color-white)]'}`}
           >
             EN
+          </Link>
+          <span className="text-[var(--color-muted-2)]">/</span>
+          <Link
+            href={{pathname: pathname as any, params: params as any}}
+            locale="el"
+            className={`transition-colors duration-300 ${locale === 'el' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted)] hover:text-[var(--color-white)]'}`}
+          >
+            EL
           </Link>
         </div>
         <Link href="/kontakt" className="text-[0.95rem] tracking-[0.02em] text-white border border-[var(--color-line)] px-[1.25rem] py-[0.65rem] rounded-full transition-all duration-350 hover:border-[var(--color-pop)] hover:bg-[var(--color-pop)] hover:text-white">
@@ -93,6 +107,7 @@ export default function Header() {
           <div className="flex flex-col gap-4 text-xl">
             <Link href="/arbeiten" onClick={() => setMenuOpen(false)}>{t('arbeiten')}</Link>
             <Link href="/leistungen" onClick={() => setMenuOpen(false)}>{t('leistungen')}</Link>
+            <Link href="/hospitality" onClick={() => setMenuOpen(false)}>{t('hospitality')}</Link>
             <Link href="/studio" onClick={() => setMenuOpen(false)}>{t('studio')}</Link>
             <Link href="/journal" onClick={() => setMenuOpen(false)}>{t('journal')}</Link>
             <Link href="/kontakt" className="text-[var(--color-gold)]" onClick={() => setMenuOpen(false)}>{t('erstgespraech')}</Link>
@@ -101,6 +116,8 @@ export default function Header() {
             <Link href={{pathname: pathname as any, params: params as any}} locale="de" onClick={() => setMenuOpen(false)} className={locale === 'de' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted)]'}>DE</Link>
             <span className="text-[var(--color-muted-2)]">/</span>
             <Link href={{pathname: pathname as any, params: params as any}} locale="en" onClick={() => setMenuOpen(false)} className={locale === 'en' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted)]'}>EN</Link>
+            <span className="text-[var(--color-muted-2)]">/</span>
+            <Link href={{pathname: pathname as any, params: params as any}} locale="el" onClick={() => setMenuOpen(false)} className={locale === 'el' ? 'text-[var(--color-gold)]' : 'text-[var(--color-muted)]'}>EL</Link>
           </div>
         </div>
       )}

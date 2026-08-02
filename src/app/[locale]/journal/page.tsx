@@ -6,10 +6,14 @@ import {getPosts} from '@/lib/journal';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  const t = await getTranslations({locale, namespace: 'Journal'});
+  const isEn = locale === 'en';
   return {
-    title: t('section_title') + ' — Goldvale Studios',
-    description: t('section_title'),
+    title: isEn
+      ? 'Journal — Thoughts & Insights on Web Design & Tech | Goldvale Studios'
+      : 'Journal — Gedanken & Einblicke zu Webdesign & Tech | Goldvale Studios',
+    description: isEn
+      ? 'Insights, articles, and technical breakdowns on web performance, UX research, AI, and hospitality tech.'
+      : 'Gedanken, Leitfäden und Analysen zu Web-Performance, UX-Research, KI und Hospitality-Technologie.',
   };
 }
 

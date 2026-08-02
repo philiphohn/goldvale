@@ -6,14 +6,19 @@ import Image from 'next/image';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  const t = await getTranslations({locale, namespace: 'WorkDetail'});
+  const isEn = locale === 'en';
   return {
-    title: t('title') + ' — Goldvale Studios',
-    description: t('lead'),
+    title: isEn
+      ? 'Selected Projects & Portfolio | Goldvale Studios'
+      : 'Ausgewählte Projekte & Referenzen | Goldvale Studios',
+    description: isEn
+      ? 'Explore our digital work for clients including Tolon House, The Lakeside Loft, Eventboot.de & Filoxenos.gr.'
+      : 'Entdecken Sie unsere digitalen Arbeiten für Kunden wie Tolon House, The Lakeside Loft, Eventboot.de & Filoxenos.gr.',
   };
 }
 
-export default async function ArbeitenDetailPage() {
+export default async function ArbeitenDetailPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = await getTranslations('WorkDetail');
 
   const projects = [
@@ -71,6 +76,17 @@ export default async function ArbeitenDetailPage() {
 
       {/* Grid */}
       <div className="wrap">
+        <Reveal>
+          <div className="mb-[2.5rem]">
+            <Link href="/hospitality" className="mono text-[0.92rem] text-[var(--color-gold)] border-b border-[var(--color-gold)] pb-[0.1em] hover:text-white hover:border-white transition-colors inline-block">
+              {locale === 'en'
+                ? 'Are you a host or hotelier? Visit our Hospitality page'
+                : locale === 'el'
+                ? 'Είστε οικοδεσπότης ή ξενοδόχος; Δείτε τη σελίδα Hospitality'
+                : 'Sie sind Gastgeber oder Hotelier? Zur Hospitality-Seite'} →
+            </Link>
+          </div>
+        </Reveal>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[clamp(1.5rem,3vw,3rem)] gap-y-[clamp(3rem,6vw,5rem)]">
           {projects.map((proj, i) => (
             <Reveal key={i} delay={(i % 2) * 0.1}>
@@ -115,7 +131,7 @@ export default async function ArbeitenDetailPage() {
             <h2 className="font-medium text-[clamp(2rem,3.5vw,2.8rem)] lowercase tracking-[-0.02em] leading-[1.1] mb-[1rem]">{t('cta_title')}</h2>
             <p className="text-[var(--color-muted)] text-[1.2rem] mb-[2rem]">{t('cta_desc')}</p>
             <Link href="/kontakt">
-              <Button>Kontakt aufnehmen</Button>
+              <Button>{t('cta_button')}</Button>
             </Link>
           </div>
         </Reveal>

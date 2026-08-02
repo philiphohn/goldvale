@@ -1,21 +1,27 @@
 import {getTranslations} from 'next-intl/server';
 import Reveal from '@/components/ui/Reveal';
+import {Link} from '@/i18n/routing';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  const t = await getTranslations({locale, namespace: 'ServicesDetail'});
+  const isEn = locale === 'en';
   return {
-    title: t('title') + ' — Goldvale Studios',
-    description: t('lead'),
+    title: isEn
+      ? 'Digital Agency Services | Websites, Apps & Branding — Goldvale Studios'
+      : 'Digitalagentur Leistungen | Websites, Apps & Branding — Goldvale Studios',
+    description: isEn
+      ? 'From concept to launch: bespoke websites, web apps, design systems, and digital strategies built for longevity and growth.'
+      : 'Von der Idee bis zum Launch: Maßgeschneiderte Websites, Web-Apps, Design-Systeme und Digitalstrategien aus einer Hand.',
   };
 }
 
-export default async function LeistungenDetailPage() {
+export default async function LeistungenDetailPage({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
   const t = await getTranslations('ServicesDetail');
   const tSrv = await getTranslations('Services');
 
   const services = [
-    { num: '01', title: tSrv('s1_title'), desc: tSrv('s1_desc'), extended: 'Wir konzipieren und entwickeln maßgeschneiderte Websites, die nicht nur beeindruckend aussehen, sondern auch performant und skalierbar sind. Unser Ansatz kombiniert tiefgehendes Verständnis für User Experience mit modernsten Technologien wie React, Next.js und Headless CMS-Systemen.', kw: ['UX / UI', 'Screendesign', 'Frontend', 'Headless CMS', 'Performance', 'Barrierefreiheit'] },
+    { num: '01', title: tSrv('s1_title'), desc: tSrv('s1_desc'), extended: 'Wir konzipieren und entwickeln maßgeschneiderte Websites, die nicht nur beeindruckend aussehen, sondern auch performant und skalierbar sind. Unser Ansatz kombiniert tiefgehendes Verständnis für User Experience mit modernsten Technologien wie React, Next.js und Headless CMS-Systemen.', kw: ['UX / UI', 'Screendesign', 'Frontend', 'Headless CMS', 'Performance', 'Barrierefreiheit'], link: { text: locale === 'en' ? 'Websites for hotels and vacation rentals' : 'Auftritte für Hotels und Ferienwohnungen', href: '/hospitality' as const } },
     { num: '02', title: tSrv('s2_title'), desc: tSrv('s2_desc'), extended: 'Komplexe digitale Produkte erfordern mehr als nur guten Code. Wir bauen Web-Apps und mobile Anwendungen, die geschäftskritische Prozesse digitalisieren und Nutzern echte Mehrwerte bieten. Von der Architektur bis zum Deployment decken wir den gesamten Stack ab.', kw: ['Web-App', 'Mobile', 'Prototyping', 'Full-Stack', 'API-Integration', 'Skalierung'] },
     { num: '03', title: tSrv('s3_title'), desc: tSrv('s3_desc'), extended: 'Eine starke Marke ist das Fundament jedes erfolgreichen Unternehmens. Wir entwickeln digitale Identitäten, die Haltung zeigen und sich nahtlos über alle Touchpoints erstrecken. Unsere Design Systeme garantieren konsistente Markenführung im digitalen Raum.', kw: ['Branding', 'Design System', 'Corporate Design', 'Motion', 'Guidelines'] },
     { num: '04', title: tSrv('s4_title'), desc: tSrv('s4_desc'), extended: 'Erfolg im Digitalen ist kein Zufall. Wir analysieren Märkte, Zielgruppen und Technologien, um datengetriebene Strategien zu entwickeln. Mit UX-Audits und klaren Roadmaps schaffen wir die Basis für nachhaltiges Wachstum und messbare Ergebnisse.', kw: ['Digitalstrategie', 'Research', 'UX-Audit', 'Roadmap', 'SEO'] },
@@ -54,6 +60,13 @@ export default async function LeistungenDetailPage() {
                 <div>
                   <p className="text-[var(--color-white)] text-[1.3rem] leading-[1.5] font-medium mb-[1.5rem] max-w-[40ch]">{srv.desc}</p>
                   <p className="text-[var(--color-muted)] text-[1.1rem] leading-[1.6] max-w-[45ch]">{srv.extended}</p>
+                  {srv.link && (
+                    <p className="mt-[1.2rem]">
+                      <Link href={srv.link.href} className="mono !text-[0.88rem] text-[var(--color-gold)] border-b border-[var(--color-gold)] pb-[0.1em] hover:text-white hover:border-white transition-colors inline-block">
+                        {srv.link.text} →
+                      </Link>
+                    </p>
+                  )}
                 </div>
                 
               </div>
