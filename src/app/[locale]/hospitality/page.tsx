@@ -20,15 +20,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       languages: {
         de: `${SITE_URL}/de/hospitality`,
         en: `${SITE_URL}/en/hospitality`,
+        el: `${SITE_URL}/el/hospitality`,
         'x-default': `${SITE_URL}/en/hospitality`,
       },
     },
     openGraph: {
-      title: t('og_title'),
-      description: t('og_description'),
+      title: `${t('title')}`,
+      description: t('description'),
       url: canonicalUrl,
       siteName: 'Goldvale Studios',
-      locale: locale === 'en' ? 'en_US' : 'de_DE',
+      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
       type: 'website',
     },
     twitter: {

@@ -11,22 +11,27 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const isEn = locale === 'en';
   const canonicalUrl = `${SITE_URL}/${locale}/webdesign-berlin`;
 
-  const title = isEn
+  const title = locale === 'en'
     ? 'Web Design Berlin | Digital Studio for High-Performance Websites'
+    : locale === 'el'
+    ? 'Web Design Berlin | Ψηφιακό Studio για Websites Υψηλής Απόδοσης'
     : 'Webdesign Berlin | Digitalstudio für Performance Websites & Apps';
   
-  const description = isEn
+  const description = locale === 'en'
     ? 'Bespoke web design & app development in Berlin. We design & develop high-performance websites and digital products for ambitious brands.'
+    : locale === 'el'
+    ? 'Εξειδικευμένο web design & ανάπτυξη εφαρμογών στο Βερολίνο. Σχεδιάζουμε και αναπτύσσουμε ψηφιακά προϊόντα υψηλής απόδοσης.'
     : 'Maßgeschneidertes Webdesign & App-Entwicklung in Berlin. Wir konzipieren und entwickeln performante Websites und digitale Produkte für ambitionierte Marken.';
 
   return {
-    title: `${title} — Goldvale Studios`,
+    title,
     description,
     alternates: {
       canonical: canonicalUrl,
       languages: {
         de: `${SITE_URL}/de/webdesign-berlin`,
         en: `${SITE_URL}/en/webdesign-berlin`,
+        el: `${SITE_URL}/el/webdesign-berlin`,
         'x-default': `${SITE_URL}/en/webdesign-berlin`,
       },
     },
@@ -34,9 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title,
       description,
       url: canonicalUrl,
-      siteName: 'Goldvale Studios',
-      locale: isEn ? 'en_US' : 'de_DE',
-      type: 'website',
+      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
     },
   };
 }

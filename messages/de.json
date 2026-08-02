@@ -173,22 +173,46 @@
       "h2": "was wir für gastgeber bauen",
       "intro": "Kein Standardpaket, sondern die Bausteine, die im Gastgewerbe tatsächlich über Buchungen entscheiden.",
       "s1_h3": "direktbuchungs-website",
-      "s1_tags": ["UX / UI", "SCREENDESIGN", "CONVERSION"],
+      "s1_tags": [
+        "UX / UI",
+        "SCREENDESIGN",
+        "CONVERSION"
+      ],
       "s1_text": "Eine Buchungsstrecke, die keine Fragen offen lässt: Verfügbarkeit, Preis, Leistungen und Stornobedingungen dort, wo der Gast sie erwartet. Wir gestalten den Weg von der ersten Neugier bis zur Bestätigung so kurz wie möglich — ohne die Ruhe zu verlieren, die ein gutes Haus ausstrahlt.",
       "s2_h3": "buchungssystem & channel manager",
-      "s2_tags": ["API-INTEGRATION", "ICAL", "SYNC"],
+      "s2_tags": [
+        "API-INTEGRATION",
+        "ICAL",
+        "SYNC"
+      ],
       "s2_text": "Wir binden Ihr bestehendes System an, statt Ihnen ein neues aufzudrängen. Verfügbarkeiten und Preise bleiben synchron mit den Portalen, Doppelbuchungen sind ausgeschlossen, und Ihr Team arbeitet weiter in der Oberfläche, die es kennt.",
       "s3_h3": "bildsprache & markenauftritt",
-      "s3_tags": ["BRANDING", "ART DIRECTION", "MOTION"],
+      "s3_tags": [
+        "BRANDING",
+        "ART DIRECTION",
+        "MOTION"
+      ],
       "s3_text": "Räume verkaufen sich über Atmosphäre. Wir entwickeln die visuelle Identität, bringen Ihr Bildmaterial in eine konsistente Ordnung und geben Ihrem Haus eine Handschrift, die auch außerhalb der Buchungsseite trägt — auf Social Media, in Newslettern, in der Beschilderung vor Ort.",
       "s4_h3": "mehrsprachigkeit & internationale gäste",
-      "s4_tags": ["I18N", "HREFLANG", "LOKALISIERUNG"],
+      "s4_tags": [
+        "I18N",
+        "HREFLANG",
+        "LOKALISIERUNG"
+      ],
       "s4_text": "Gäste buchen in ihrer Sprache. Wir setzen Mehrsprachigkeit technisch korrekt um — eigene URLs pro Sprache, saubere Hreflang-Auszeichnung, lokalisierte Formate für Datum, Preis und Adresse. Keine automatische Übersetzung, die Vertrauen kostet.",
       "s5_h3": "local seo & sichtbarkeit",
-      "s5_tags": ["SEO", "LOCAL", "STRUKTURIERTE DATEN"],
+      "s5_tags": [
+        "SEO",
+        "LOCAL",
+        "STRUKTURIERTE DATEN"
+      ],
       "s5_text": "Wir strukturieren Ihre Seite so, dass Suchmaschinen Lage, Ausstattung, Preisrahmen und Bewertungen verstehen. Dazu kommen Landingpages für die Suchanfragen, mit denen Gäste Ihre Region tatsächlich finden — nicht die, die in einem Keyword-Tool gut aussehen.",
       "s6_h3": "performance & technik",
-      "s6_tags": ["NEXT.JS", "CORE WEB VITALS", "HEADLESS CMS"],
+      "s6_tags": [
+        "NEXT.JS",
+        "CORE WEB VITALS",
+        "HEADLESS CMS"
+      ],
       "s6_text": "Große Bilder und schnelle Ladezeiten sind kein Widerspruch, wenn die Architektur stimmt. Wir bauen auf modernen Frameworks, liefern Inhalte nah am Gast aus und geben Ihnen ein Redaktionssystem, in dem Sie Preise, Texte und Galerien selbst pflegen können.",
       "all_services_link": "Alle Leistungen im Detail"
     },
@@ -212,15 +236,27 @@
       "intro": "Auszug aus Projekten, in denen Aufenthalt, Buchung und Vermietung im Zentrum standen.",
       "p1_title": "Tolon House",
       "p1_year": "2024",
-      "p1_tags": ["WEBSITE", "TOURISMUS", "DESIGN"],
+      "p1_tags": [
+        "WEBSITE",
+        "TOURISMUS",
+        "DESIGN"
+      ],
       "p1_desc": "Stilvolle, frisch renovierte Apartments im Herzen von Tolo, Griechenland — mit einem Auftritt, der Lage und Atmosphäre in den Mittelpunkt stellt.",
       "p2_title": "The Lakeside Loft",
       "p2_year": "2024",
-      "p2_tags": ["WEBSITE", "BRANDING", "HOSPITALITY"],
+      "p2_tags": [
+        "WEBSITE",
+        "BRANDING",
+        "HOSPITALITY"
+      ],
       "p2_desc": "Ein exklusives Eventboot in Berlin: Marke, Bildsprache und Anfragestrecke für ein Objekt, das es so kein zweites Mal gibt.",
       "p3_title": "Filoxenos.gr",
       "p3_year": "2026",
-      "p3_tags": ["PLATTFORM", "API-INTEGRATION", "PROPTECH"],
+      "p3_tags": [
+        "PLATTFORM",
+        "API-INTEGRATION",
+        "PROPTECH"
+      ],
       "p3_desc": "Plattform zur Automatisierung von Kurzzeitmiet-Erklärungen in Griechenland, mit direkten Channel-Manager-Integrationen — unsere Handschrift auch dort, wo Vermietung zur Regulierung trifft.",
       "all_projects_link": "Alle Projekte"
     },
@@ -263,5 +299,19 @@
       "h2": "sprechen wir über ihr haus.",
       "text": "Wir sehen uns Ihre aktuelle Situation an und sagen Ihnen ehrlich, was sich lohnt — und was nicht. Unverbindlich und kostenlos."
     }
+  },
+  "Meta": {
+    "home_title": "Goldvale Studios — Digitalstudio für Websites & Apps",
+    "home_description": "High-End Websites, App-Entwicklung & Markenstrategie für ambitionierte Unternehmen. Jetzt Erstgespräch vereinbaren.",
+    "work_title": "Ausgewählte Projekte & Referenzen",
+    "work_description": "Entdecken Sie unsere digitalen Arbeiten für Kunden wie Tolon House, The Lakeside Loft, Eventboot.de & Filoxenos.gr.",
+    "services_title": "Leistungen | Websites, Apps & Branding",
+    "services_description": "Von der Idee bis zum Launch: Maßgeschneiderte Websites, Web-Apps, Design-Systeme und Digitalstrategien aus einer Hand.",
+    "studio_title": "Das Studio — Digitalstrategie & Engineering",
+    "studio_description": "Erfahren Sie mehr über unsere Arbeitsweise, Werte und Philosophie für nachhaltigen digitalen Erfolg.",
+    "journal_title": "Journal — Gedanken & Einblicke zu Webdesign & Tech",
+    "journal_description": "Gedanken, Leitfäden und Analysen zu Web-Performance, UX-Research, KI und Hospitality-Technologie.",
+    "contact_title": "Erstgespräch vereinbaren",
+    "contact_description": "Lassen Sie uns über Ihr nächstes Projekt sprechen. Unverbindliches und kostenloses Erstgespräch mit Gründer Philip Hohn."
   }
 }

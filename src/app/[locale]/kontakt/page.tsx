@@ -4,16 +4,34 @@ import ContactForm from '@/components/ui/ContactForm';
 import Button from '@/components/ui/Button';
 import Image from 'next/image';
 
+import {SITE_URL} from '@/lib/site-url';
+
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  const isEn = locale === 'en';
+  const t = await getTranslations({locale, namespace: 'Meta'});
+  const canonicalUrl = `${SITE_URL}/${locale}/kontakt`;
+  
+  const title = t('contact_title');
+  const description = t('contact_description');
+  
   return {
-    title: isEn
-      ? 'Book an Intro Call | Goldvale Studios'
-      : 'Erstgespräch vereinbaren | Goldvale Studios',
-    description: isEn
-      ? 'Schedule a free, non-binding consultation about your next digital project with founder Philip Hohn.'
-      : 'Lassen Sie uns über Ihr nächstes Projekt sprechen. Unverbindliches und kostenloses Erstgespräch mit Gründer Philip Hohn.',
+    title,
+    description,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        de: `${SITE_URL}/de/kontakt`,
+        en: `${SITE_URL}/en/kontakt`,
+        el: `${SITE_URL}/el/kontakt`,
+        'x-default': `${SITE_URL}/en/kontakt`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
+    },
   };
 }
 

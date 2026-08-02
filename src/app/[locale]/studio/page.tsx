@@ -1,16 +1,34 @@
 import {getTranslations} from 'next-intl/server';
 import Reveal from '@/components/ui/Reveal';
 
+import {SITE_URL} from '@/lib/site-url';
+
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  const isEn = locale === 'en';
+  const t = await getTranslations({locale, namespace: 'Meta'});
+  const canonicalUrl = `${SITE_URL}/${locale}/studio`;
+  
+  const title = t('studio_title');
+  const description = t('studio_description');
+  
   return {
-    title: isEn
-      ? 'The Studio — Digital Strategy & Engineering | Goldvale Studios'
-      : 'Das Studio — Digitalstrategie & Engineering | Goldvale Studios',
-    description: isEn
-      ? 'A team of strategic thinkers, designers, and developers with a shared vision: digital excellence and sustainable growth.'
-      : 'Erfahren Sie mehr über unsere Arbeitsweise, Werte und Philosophie für nachhaltigen digitalen Erfolg.',
+    title,
+    description,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        de: `${SITE_URL}/de/studio`,
+        en: `${SITE_URL}/en/studio`,
+        el: `${SITE_URL}/el/studio`,
+        'x-default': `${SITE_URL}/en/studio`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
+    },
   };
 }
 

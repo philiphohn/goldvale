@@ -26,41 +26,14 @@ const sans = Hanken_Grotesk({
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
 
-  let title = 'Goldvale Studios — Digitalstudio für Websites & App-Entwicklung';
-  let description = 'Wir bauen hochkonvertierende Websites, Web-Apps und digitale Marken für ambitionierte Unternehmen.';
-
-  if (locale === 'en') {
-    title = 'Goldvale Studios — Digital Studio for Websites & Apps';
-    description = 'We build high-converting websites, web apps, and digital brands for ambitious companies.';
-  } else if (locale === 'el') {
-    title = 'Goldvale Studios — Ψηφιακό Studio για Websites & Εφαρμογές';
-    description = 'Δημιουργούμε υψηλής απόδοσης websites, web apps και ψηφιακά brands για φιλόδοξες επιχειρήσεις.';
-  }
-
-  const canonicalUrl = `${SITE_URL}/${locale}`;
-
   return {
     metadataBase: new URL(SITE_URL),
     title: {
       template: '%s | Goldvale Studios',
-      default: title,
-    },
-    description: description,
-    alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        de: `${SITE_URL}/de`,
-        en: `${SITE_URL}/en`,
-        el: `${SITE_URL}/el`,
-        'x-default': `${SITE_URL}/en`,
-      },
+      default: 'Goldvale Studios — Digital Studio',
     },
     openGraph: {
-      title: title,
-      description: description,
-      url: canonicalUrl,
       siteName: 'Goldvale Studios',
-      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
       type: 'website',
       images: [
         {
@@ -73,8 +46,6 @@ export async function generateMetadata({params}: {params: Promise<{locale: strin
     },
     twitter: {
       card: 'summary_large_image',
-      title: title,
-      description: description,
       images: ['/opengraph-image.png']
     },
   };

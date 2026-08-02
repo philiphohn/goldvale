@@ -4,16 +4,34 @@ import Button from '@/components/ui/Button';
 import {Link} from '@/i18n/routing';
 import Image from 'next/image';
 
+import {SITE_URL} from '@/lib/site-url';
+
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  const isEn = locale === 'en';
+  const t = await getTranslations({locale, namespace: 'Meta'});
+  const canonicalUrl = `${SITE_URL}/${locale}/arbeiten`;
+  
+  const title = t('work_title');
+  const description = t('work_description');
+  
   return {
-    title: isEn
-      ? 'Selected Projects & Portfolio | Goldvale Studios'
-      : 'Ausgewählte Projekte & Referenzen | Goldvale Studios',
-    description: isEn
-      ? 'Explore our digital work for clients including Tolon House, The Lakeside Loft, Eventboot.de & Filoxenos.gr.'
-      : 'Entdecken Sie unsere digitalen Arbeiten für Kunden wie Tolon House, The Lakeside Loft, Eventboot.de & Filoxenos.gr.',
+    title,
+    description,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        de: `${SITE_URL}/de/arbeiten`,
+        en: `${SITE_URL}/en/arbeiten`,
+        el: `${SITE_URL}/el/arbeiten`,
+        'x-default': `${SITE_URL}/en/arbeiten`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
+    },
   };
 }
 

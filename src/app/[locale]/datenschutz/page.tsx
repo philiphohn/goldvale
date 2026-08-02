@@ -3,12 +3,34 @@ import Reveal from '@/components/ui/Reveal';
 import PrivacyPolicyDE from '@/components/legal/PrivacyPolicyDE';
 import PrivacyPolicyEN from '@/components/legal/PrivacyPolicyEN';
 
+import {SITE_URL} from '@/lib/site-url';
+
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   const t = await getTranslations({locale, namespace: 'Footer'});
+  const canonicalUrl = `${SITE_URL}/${locale}/datenschutz`;
+  
+  const title = t('datenschutz');
+  const description = t('datenschutz');
+  
   return {
-    title: t('datenschutz') + ' — Goldvale Studios',
-    description: t('datenschutz'),
+    title,
+    description,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        de: `${SITE_URL}/de/datenschutz`,
+        en: `${SITE_URL}/en/datenschutz`,
+        el: `${SITE_URL}/el/datenschutz`,
+        'x-default': `${SITE_URL}/en/datenschutz`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
+    },
   };
 }
 

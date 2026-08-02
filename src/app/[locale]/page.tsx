@@ -7,16 +7,34 @@ import ServicesSummary from '@/components/sections/ServicesSummary';
 import ContactPreview from '@/components/sections/ContactPreview';
 import JournalPreview from '@/components/sections/JournalPreview';
 
+import {SITE_URL} from '@/lib/site-url';
+
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  const isEn = locale === 'en';
+  const t = await getTranslations({locale, namespace: 'Meta'});
+  const canonicalUrl = `${SITE_URL}/${locale}`;
+  
+  const title = t('home_title');
+  const description = t('home_description');
+  
   return {
-    title: isEn
-      ? 'Goldvale Studios — Digital Studio for Websites & Apps'
-      : 'Goldvale Studios — Digitalstudio für Websites & Apps',
-    description: isEn
-      ? 'High-end websites, app development & brand strategy for ambitious companies. Schedule your intro call.'
-      : 'High-End Websites, App-Entwicklung & Markenstrategie für ambitionierte Unternehmen. Jetzt Erstgespräch vereinbaren.',
+    title: { absolute: title },
+    description,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        de: `${SITE_URL}/de`,
+        en: `${SITE_URL}/en`,
+        el: `${SITE_URL}/el`,
+        'x-default': `${SITE_URL}/en`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
+    },
   };
 }
 

@@ -173,22 +173,46 @@
       "h2": "τι κατασκευαζουμε για οικοδεσποτες",
       "intro": "Όχι ένα τυπικό πακέτο, αλλά τα δομικά στοιχεία που πραγματικά καθορίζουν τις κρατήσεις στον τουρισμό.",
       "s1_h3": "website απευθειας κρατησεων",
-      "s1_tags": ["UX / UI", "SCREENDESIGN", "CONVERSION"],
+      "s1_tags": [
+        "UX / UI",
+        "SCREENDESIGN",
+        "CONVERSION"
+      ],
       "s1_text": "Μια διαδικασία κρατήσεων που δεν αφήνει ερωτήματα: διαθεσιμότητα, τιμή, παροχές και όροι ακύρωσης εκεί που τα περιμένει ο επισκέπτης.",
       "s2_h3": "μηχανη κρατησεων & channel manager",
-      "s2_tags": ["API-INTEGRATION", "ICAL", "SYNC"],
+      "s2_tags": [
+        "API-INTEGRATION",
+        "ICAL",
+        "SYNC"
+      ],
       "s2_text": "Συνδέουμε το υπάρχον σύστημά σας. Διαθεσιμότητα και τιμές παραμένουν συγχρονισμένες με τις πλατφόρμες, αποκλείοντας διπλοκρατήσεις.",
       "s3_h3": "οπτικη ταυτοτητα & ατμοσφαιρα",
-      "s3_tags": ["BRANDING", "ART DIRECTION", "MOTION"],
+      "s3_tags": [
+        "BRANDING",
+        "ART DIRECTION",
+        "MOTION"
+      ],
       "s3_text": "Οι χώροι πουλιούνται μέσω ατμόσφαιρας. Αναπτύσσουμε την οπτική ταυτότητα και οργανώνουμε το φωτογραφικό σας υλικό σε μια συνεπή δομή.",
       "s4_h3": "πολυγλωσσικοτητα & διεθνεις επισκεπτες",
-      "s4_tags": ["I18N", "HREFLANG", "LOCALIZATION"],
+      "s4_tags": [
+        "I18N",
+        "HREFLANG",
+        "LOCALIZATION"
+      ],
       "s4_text": "Οι επισκέπτες κάνουν κράτηση στη γλώσσα τους. Υλοποιούμε την πολυγλωσσικότητα τεχνικά σωστά — με ξεχωριστά URLs και σωστή σήμανση Hreflang.",
       "s5_h3": "local seo & ορατοτητα",
-      "s5_tags": ["SEO", "LOCAL", "STRUCTURED DATA"],
+      "s5_tags": [
+        "SEO",
+        "LOCAL",
+        "STRUCTURED DATA"
+      ],
       "s5_text": "Δομούμε τη σελίδα σας ώστε οι μηχανές αναζήτησης να κατανοούν την τοποθεσία, τις παροχές, τις τιμές και τις αξιολογήσεις σας.",
       "s6_h3": "αποδοση & τεχνολογια",
-      "s6_tags": ["NEXT.JS", "CORE WEB VITALS", "HEADLESS CMS"],
+      "s6_tags": [
+        "NEXT.JS",
+        "CORE WEB VITALS",
+        "HEADLESS CMS"
+      ],
       "s6_text": "Μεγάλες εικόνες και γρήγορη φόρτωση συνδυάζονται απόλυτα με τη σωστή αρχιτεκτονική. Βασιζόμαστε σε σύγχρονα frameworks και Headless CMS.",
       "all_services_link": "Όλες οι υπηρεσίες αναλυτικά"
     },
@@ -212,15 +236,27 @@
       "intro": "Επιλογή έργων στα οποία η διαμονή, η κράτηση και η φιλοξενία βρίσκονταν στο επίκεντρο.",
       "p1_title": "Tolon House",
       "p1_year": "2024",
-      "p1_tags": ["WEBSITE", "ΤΟΥΡΙΣΜΟΣ", "DESIGN"],
+      "p1_tags": [
+        "WEBSITE",
+        "ΤΟΥΡΙΣΜΟΣ",
+        "DESIGN"
+      ],
       "p1_desc": "Κομψά ανακαινισμένα διαμερίσματα στην καρδιά του Τολού, Αργολίδας — με παρουσία που αναδεικνύει την τοποθεσία και την ατμόσφαιρα.",
       "p2_title": "The Lakeside Loft",
       "p2_year": "2024",
-      "p2_tags": ["WEBSITE", "BRANDING", "HOSPITALITY"],
+      "p2_tags": [
+        "WEBSITE",
+        "BRANDING",
+        "HOSPITALITY"
+      ],
       "p2_desc": "Ένα αποκλειστικό σκάφος εκδηλώσεων στο Βερολίνο: brand, οπτική γλώσσα και ροή αιτημάτων για ένα μοναδικό κατάλυμα.",
       "p3_title": "Filoxenos.gr",
       "p3_year": "2026",
-      "p3_tags": ["ΠΛΑΤΦΟΡΜΑ", "API INTEGRATION", "PROPTECH"],
+      "p3_tags": [
+        "ΠΛΑΤΦΟΡΜΑ",
+        "API INTEGRATION",
+        "PROPTECH"
+      ],
       "p3_desc": "Πλατφόρμα αυτοματοποίησης δηλώσεων βραχυχρόνιας μίσθωσης στην Ελλάδα με απευθείας διασύνδεση channel managers.",
       "all_projects_link": "Όλα τα έργα"
     },
@@ -263,5 +299,19 @@
       "h2": "ας μιλησουμε για το καταλυμα σας.",
       "text": "Εξετάζουμε την τρέχουσα κατάστασή σας και σας λέμε ειλικρινά τι αξίζει — και τι όχι. Δωρεάν και χωρίς δεσμεύσεις."
     }
+  },
+  "Meta": {
+    "home_title": "Goldvale Studios — Ψηφιακό Studio για Websites & Εφαρμογές",
+    "home_description": "Websites υψηλής απόδοσης, web apps και ψηφιακή στρατηγική για φιλόδοξες επιχειρήσεις. Κλείστε μια πρώτη γνωριμία.",
+    "work_title": "Επιλεγμένα Έργα & Case Studies",
+    "work_description": "Δείτε τις ψηφιακές μας δουλειές για πελάτες όπως Tolon House, The Lakeside Loft, Eventboot.de και Filoxenos.gr.",
+    "services_title": "Υπηρεσίες | Websites, Web Apps & Branding",
+    "services_description": "Από την ιδέα ως το launch: websites, web apps, design systems και ψηφιακή στρατηγική από μία πηγή.",
+    "studio_title": "Το Studio — Ψηφιακή Στρατηγική & Engineering",
+    "studio_description": "Στρατηγική, design και ανάπτυξη από μία πηγή. Γνωρίστε την ομάδα και τις αξίες του Goldvale Studios.",
+    "journal_title": "Journal — Σκέψεις & Αναλύσεις για Web Design & Τεχνολογία",
+    "journal_description": "Άρθρα και αναλύσεις για web design, performance, SEO και ψηφιακή στρατηγική.",
+    "contact_title": "Επικοινωνία & Γνωριμία",
+    "contact_description": "Μιλήστε μας για το επόμενο ψηφιακό σας project. Κλείστε μια δωρεάν, χωρίς δέσμευση συζήτηση με τον Philip Hohn."
   }
 }

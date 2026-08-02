@@ -4,16 +4,34 @@ import Reveal from '@/components/ui/Reveal';
 import {Link} from '@/i18n/routing';
 import {getPosts} from '@/lib/journal';
 
+import {SITE_URL} from '@/lib/site-url';
+
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  const isEn = locale === 'en';
+  const t = await getTranslations({locale, namespace: 'Meta'});
+  const canonicalUrl = `${SITE_URL}/${locale}/journal`;
+  
+  const title = t('journal_title');
+  const description = t('journal_description');
+  
   return {
-    title: isEn
-      ? 'Journal — Thoughts & Insights on Web Design & Tech | Goldvale Studios'
-      : 'Journal — Gedanken & Einblicke zu Webdesign & Tech | Goldvale Studios',
-    description: isEn
-      ? 'Insights, articles, and technical breakdowns on web performance, UX research, AI, and hospitality tech.'
-      : 'Gedanken, Leitfäden und Analysen zu Web-Performance, UX-Research, KI und Hospitality-Technologie.',
+    title,
+    description,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        de: `${SITE_URL}/de/journal`,
+        en: `${SITE_URL}/en/journal`,
+        el: `${SITE_URL}/el/journal`,
+        'x-default': `${SITE_URL}/en/journal`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      locale: locale === 'en' ? 'en_US' : locale === 'el' ? 'el_GR' : 'de_DE',
+    },
   };
 }
 
