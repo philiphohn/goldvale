@@ -8,6 +8,7 @@ export const routeMap: Record<string, { en: string; de: string; el: string }> = 
   '/datenschutz': { en: '/privacy', de: '/datenschutz', el: '/prostasia-dedomenon' },
   '/hospitality': { en: '/hospitality', de: '/hospitality', el: '/hospitality' },
   '/webdesign-berlin': { en: '/webdesign-berlin', de: '/webdesign-berlin', el: '/webdesign-berlin' },
+  '/tools/ota-provisionsrechner': { en: '/tools/ota-commission-calculator', de: '/tools/ota-provisionsrechner', el: '/ergaleia/ypologistis-promitheion-ota' },
 };
 
 export function getLocalizedPath(route: string, locale: 'de' | 'en' | 'el') {

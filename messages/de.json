@@ -313,5 +313,123 @@
     "journal_description": "Gedanken, Leitfäden und Analysen zu Web-Performance, UX-Research, KI und Hospitality-Technologie.",
     "contact_title": "Erstgespräch vereinbaren",
     "contact_description": "Lassen Sie uns über Ihr nächstes Projekt sprechen. Unverbindliches und kostenloses Erstgespräch mit Gründer Philip Hohn."
+  },
+  "otaTool": {
+    "meta_title": "OTA-Provisionsrechner für Hotels & Ferienwohnungen | Goldvale Studios",
+    "meta_description": "Berechnen Sie, wie viel Provision Sie jährlich an Buchungsplattformen zahlen und wie viel Sie durch mehr Direktbuchungen sparen können.",
+    "eyebrow": "01 — Provisionsrechner",
+    "h1": "wie viel zahlen sie jährlich an buchungsplattformen?",
+    "subtitle": "Berechnen Sie in 60 Sekunden Ihre tatsächlichen Provisionskosten und erfahren Sie, ob sich eine eigene Website für Ihren Betrieb amortisiert.",
+    "property_types": {
+      "hotel": "Hotel / Boutique Hotel",
+      "apartments": "Ferienwohnungen / Apartments",
+      "villa": "Ferienhaus / Villa",
+      "property_manager": "Property Manager / Agentur"
+    },
+    "fields": {
+      "property_type_label": "Betriebsart",
+      "units_label": "Anzahl Einheiten / Apartments / Zimmer",
+      "open_days_label": "Betriebstage pro Jahr",
+      "occupancy_mode_rate": "Auslastung in %",
+      "occupancy_mode_nights": "Nächte pro Einheit",
+      "occupancy_rate_label": "Durchschnittliche Auslastung (%)",
+      "nights_label": "Belegte Nächte pro Einheit/Jahr",
+      "adr_label": "Ø Preis pro Nacht (ADR €)",
+      "ota_share_label": "Anteil Plattformbuchungen (OTA %)",
+      "ota_commission_label": "Ihre Ø Provision über alle Plattformen (%)",
+      "more_options": "Genauer rechnen (erweiterte Optionen)",
+      "less_options": "Weniger Optionen",
+      "direct_cost_label": "Kosten einer Direktbuchung (Zahlung/Engine %)",
+      "has_booking_engine": "Booking Engine bereits vorhanden",
+      "has_channel_manager": "Channel Manager bereits vorhanden"
+    },
+    "scenarios": {
+      "label": "Szenario: Verlagerung zu Direktbuchungen",
+      "points_5": "+5 Prozentpunkte",
+      "points_10": "+10 Prozentpunkte",
+      "points_15": "+15 Prozentpunkte",
+      "points_20": "+20 Prozentpunkte"
+    },
+    "results": {
+      "card1_title": "Geschätzte Jahresprovision",
+      "card1_sub": "≈ {monthly} € pro Monat",
+      "card2_title": "Geschätzte Nettoersparnis / Jahr",
+      "card2_sub": "bei +{points} Prozentpunkten Direktbuchungen",
+      "card3_title": "Effekt über 3 Jahre",
+      "card3_sub": "Kumulierte Nettoersparnis",
+      "card4_title": "Passendes Paket & Amortisation",
+      "custom_budget": "Orientierungsbudget: ca. {amount} € (18 Monate Amortisation)",
+      "tier_range": "{low} € – {high} € netto",
+      "payback_months": "Amortisation in ca. {low}–{high} Monaten",
+      "payback_single": "Amortisation in ca. {months} Monaten"
+    },
+    "amortization": {
+      "under_18": "Ein Projekt in dieser Größenordnung wäre unter diesen Annahmen in unter eineinhalb Jahren wieder eingespielt.",
+      "19_36": "Die Investition dürfte sich mittelfristig tragen.",
+      "37_60": "Rechnerisch dauert die Amortisation länger als drei Jahre. Ein kleinerer Umfang ist wahrscheinlich sinnvoller.",
+      "not_recommended": "Bei diesen Werten trägt sich ein Website-Projekt über die Provisionsersparnis allein nicht. Wir empfehlen zunächst kleinere Maßnahmen zur Direktbuchungssteigerung."
+    },
+    "recommendations": {
+      "rec_units_1_3_no_engine": "Eine neue Website mit angebundener Booking Engine genügt. Eine individuelle Buchungsplattform ist nicht nötig.",
+      "rec_units_4_10_has_cm": "Ihr bestehender Channel Manager lässt sich in der Regel anbinden. Prüfen Sie zuerst die Integration.",
+      "rec_units_4_10_no_cm": "Ab dieser Größe lohnt die Kombination aus Website, Booking Engine und Channel Manager, damit Verfügbarkeiten synchron bleiben.",
+      "rec_hotel_11_30": "Entscheidend ist die Anbindung an Ihr bestehendes System. Das klären wir vor dem Design.",
+      "rec_pm_over_30": "Bei Ihrer Größe entscheidet die Systemarchitektur über das Ergebnis. Erster Schritt ist die Prüfung von PMS und Channel Manager."
+    },
+    "warnings": {
+      "otaCommissionHigh": "Bitte prüfen Sie diesen Wert für Ihre effektive Provision.",
+      "occupancyHigh": "Ungewöhnlich hohe Auslastung für Ganzjahresbetrieb.",
+      "shiftCapped": "Mehr als Ihr aktueller Plattformanteil ist nicht verlagerbar (begrenzt).",
+      "directCostHigh": "Bei diesen Kosten für Direktbuchungen ergibt sich rechnerisch keine Ersparnis."
+    },
+    "disclaimers": {
+      "estimation": "Alle Werte sind unverbindliche Schätzungen auf Basis Ihrer Eingaben. Sie stellen keine Zusage über erreichbare Einsparungen dar und ersetzen keine betriebswirtschaftliche, steuerliche oder rechtliche Beratung.",
+      "pricing": "Richtwerte, netto zzgl. gesetzlicher Umsatzsteuer. Kein verbindliches Angebot; der konkrete Preis richtet sich nach Umfang und Ausgangslage.",
+      "trademark": "Booking.com, Airbnb und weitere genannte Marken sind eingetragene Marken der jeweiligen Inhaber. Goldvale Studios steht in keiner Geschäfts- oder Partnerschaftsbeziehung zu diesen Unternehmen. Die Nennung erfolgt ausschließlich zu Beschreibungszwecken."
+    },
+    "lead_form": {
+      "heading": "Möchten Sie eine kostenlose Auswertung mit drei konkreten Maßnahmen für Ihren Betrieb?",
+      "subheading": "Die Auswertung basiert auf Ihren Rechnereingaben.",
+      "name_label": "Ihr Name (optional)",
+      "email_label": "Ihre E-Mail-Adresse *",
+      "website_label": "Website-Adresse Ihres Betriebs *",
+      "phone_label": "Telefonnummer (optional)",
+      "consent_analysis": "Ich stimme zu, dass meine Daten zur Erstellung und Zusendung der Auswertung verarbeitet werden. *",
+      "consent_newsletter": "Ja, ich möchte gelegentlich nützliche Praxis-Tipps zur Erhöhung von Direktbuchungen per E-Mail erhalten.",
+      "submit_btn": "Kostenlose Auswertung anfordern",
+      "submitting": "Wird gesendet...",
+      "success_title": "Vielen Dank für Ihre Anfrage!",
+      "success_desc": "Wir prüfen Ihre Eingaben und melden uns innerhalb von zwei Werktagen mit Ihrer individuellen Auswertung.",
+      "privacy_note": "Ihre Eingaben im Rechner werden erst bei Absenden dieses Formulars übertragen."
+    },
+    "methodology": {
+      "title": "Methodik & Annahmen",
+      "p1": "Der Rechner basiert auf der Aufschlüsselung von Bruttoumsatz, Plattformanteil (OTA %) und effektiven Provisionssätzen.",
+      "p2": "Nettoersparnis berücksichtigt die variablen Eigenkosten einer Direktbuchung (z. B. 1,4–2,5 % Zahlungsanbieter-Gebühren + Booking Engine).",
+      "p3": "Stand der Richtwerte: August 2026. Alle Berechnungen erfolgen lokal in Ihrem Browser."
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen zum Rechner",
+      "q1": "Sind Direktbuchungen wirklich so viel günstiger als Plattformen?",
+      "a1": "Ja, da Zahlungsabwicklung und Booking Engine zusammen typischerweise 2–4 % kosten, während Buchungsplattformen 15–25 % Provision verlangen.",
+      "q2": "Kann eine eigene Website Buchungsplattformen komplett ersetzen?",
+      "a2": "In der Regel nicht und das ist auch gar nicht das Ziel. Plattformen bieten Reichweite für Erstgäste. Eine eigene Website dient dazu, Stammgäste und gezielte Anfragen ohne Provision direkt zu buchen.",
+      "q3": "Wie werden die Pakete und Amortisationszeiten berechnet?",
+      "a3": "Wir vergleichen die geschätzte jährliche Nettoersparnis mit unseren Richtwerten für ein professionelles Website-Projekt inkl. Buchungsintegration.",
+      "q4": "Wo finde ich meine genaue Provisionsrate?",
+      "a4": "Ihre tatsächliche Raten- und Gebührenstruktur finden Sie in Ihrem jeweiligen Partner-Extranet bzw. Vertrag."
+    },
+    "teaser": {
+      "title": "Wie viel Provision zahlen Sie jährlich?",
+      "subtitle": "Rechnen Sie in 30 Sekunden aus, wie viel Sie sparen können.",
+      "units_label": "Einheiten",
+      "adr_label": "Ø Preis / Nacht (€)",
+      "btn": "Provisionsrechner starten",
+      "faq_link_text": "Nutzen Sie unseren kostenlosen Provisionsrechner"
+    },
+    "share": {
+      "btn": "Ergebnis teilen",
+      "copied": "Link kopiert!"
+    }
   }
 }

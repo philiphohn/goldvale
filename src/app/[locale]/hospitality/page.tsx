@@ -6,6 +6,7 @@ import ContactPreview from '@/components/sections/ContactPreview';
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import { SITE_URL } from '@/lib/site-url';
+import Teaser from '@/components/tools/Teaser';
 
 import {getPageMetadata} from '@/lib/routes';
 
@@ -227,6 +228,10 @@ export default async function HospitalityPage({ params }: { params: Promise<{ lo
                 </Reveal>
               ))}
             </div>
+
+            <Reveal delay={0.5}>
+              <Teaser />
+            </Reveal>
           </div>
         </section>
 

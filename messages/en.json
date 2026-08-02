@@ -313,5 +313,123 @@
     "journal_description": "Insights, articles, and technical breakdowns on web performance, UX research, AI, and hospitality tech.",
     "contact_title": "Book an Intro Call",
     "contact_description": "Schedule a free, non-binding consultation about your next digital project with founder Philip Hohn."
+  },
+  "otaTool": {
+    "meta_title": "OTA Commission Calculator for Hotels & Rentals | Goldvale Studios",
+    "meta_description": "Calculate how much commission you pay to booking platforms annually and how much you can save with direct bookings.",
+    "eyebrow": "01 — Commission Calculator",
+    "h1": "how much do you pay booking platforms every year?",
+    "subtitle": "Calculate your actual commission costs in 60 seconds and find out if a custom website pays off for your property.",
+    "property_types": {
+      "hotel": "Hotel / Boutique Hotel",
+      "apartments": "Vacation Apartments / Rentals",
+      "villa": "Villa / Holiday Home",
+      "property_manager": "Property Manager / Agency"
+    },
+    "fields": {
+      "property_type_label": "Property Type",
+      "units_label": "Number of Units / Apartments / Rooms",
+      "open_days_label": "Operating Days per Year",
+      "occupancy_mode_rate": "Occupancy Rate (%)",
+      "occupancy_mode_nights": "Nights per Unit",
+      "occupancy_rate_label": "Average Occupancy Rate (%)",
+      "nights_label": "Booked Nights per Unit/Year",
+      "adr_label": "Average Daily Rate (ADR €)",
+      "ota_share_label": "Platform Booking Share (OTA %)",
+      "ota_commission_label": "Average Commission Across Platforms (%)",
+      "more_options": "Detailed Calculation (Advanced Options)",
+      "less_options": "Fewer Options",
+      "direct_cost_label": "Cost per Direct Booking (Payment/Engine %)",
+      "has_booking_engine": "Booking Engine already available",
+      "has_channel_manager": "Channel Manager already available"
+    },
+    "scenarios": {
+      "label": "Scenario: Shift to Direct Bookings",
+      "points_5": "+5 Percentage Points",
+      "points_10": "+10 Percentage Points",
+      "points_15": "+15 Percentage Points",
+      "points_20": "+20 Percentage Points"
+    },
+    "results": {
+      "card1_title": "Estimated Annual Commission",
+      "card1_sub": "≈ {monthly} € per month",
+      "card2_title": "Estimated Net Savings / Year",
+      "card2_sub": "at +{points} percentage points direct bookings",
+      "card3_title": "3-Year Effect",
+      "card3_sub": "Cumulative Net Savings",
+      "card4_title": "Recommended Package & Payback",
+      "custom_budget": "Orientative Budget: approx. {amount} € (18-month payback)",
+      "tier_range": "{low} € – {high} € net",
+      "payback_months": "Payback in approx. {low}–{high} months",
+      "payback_single": "Payback in approx. {months} months"
+    },
+    "amortization": {
+      "under_18": "A project of this scale would pay for itself in less than 1.5 years under these assumptions.",
+      "19_36": "The investment is likely to be viable in the medium term.",
+      "37_60": "Payback takes longer than 3 years. A smaller project scope may make more sense.",
+      "not_recommended": "At these figures, commission savings alone do not justify a website project. We suggest smaller direct booking optimization steps first."
+    },
+    "recommendations": {
+      "rec_units_1_3_no_engine": "A new website connected to an existing booking engine is sufficient. A custom booking system is not needed.",
+      "rec_units_4_10_has_cm": "Your existing channel manager can usually be connected. Check integration first.",
+      "rec_units_4_10_no_cm": "From this size onwards, a website combined with booking engine and channel manager keeps availabilities in sync.",
+      "rec_hotel_11_30": "Integration with your existing PMS/CMS is key. We clarify this before starting design.",
+      "rec_pm_over_30": "At your scale, system architecture determines success. Evaluating PMS & channel manager is step one."
+    },
+    "warnings": {
+      "otaCommissionHigh": "Please verify your effective commission rate.",
+      "occupancyHigh": "Unusually high occupancy rate for year-round operation.",
+      "shiftCapped": "Shift capped at your current platform share.",
+      "directCostHigh": "Direct booking costs equal or exceed commission; no net savings calculated."
+    },
+    "disclaimers": {
+      "estimation": "All values are non-binding estimates based on your inputs. They do not constitute a guarantee of savings and do not replace professional advice.",
+      "pricing": "Guide prices, net plus VAT. Not a binding offer; actual pricing depends on scope.",
+      "trademark": "Booking.com, Airbnb and other mentioned trademarks belong to their respective owners. Goldvale Studios has no affiliation with these companies. Names are used purely for descriptive purposes."
+    },
+    "lead_form": {
+      "heading": "Would you like a free evaluation with three concrete action points for your property?",
+      "subheading": "The evaluation is based on your calculator inputs.",
+      "name_label": "Your Name (optional)",
+      "email_label": "Your Email Address *",
+      "website_label": "Your Property Website URL *",
+      "phone_label": "Phone Number (optional)",
+      "consent_analysis": "I agree to the processing of my data to receive the free evaluation. *",
+      "consent_newsletter": "Yes, send me occasional practical tips on increasing direct bookings.",
+      "submit_btn": "Request Free Evaluation",
+      "submitting": "Sending...",
+      "success_title": "Thank you for your request!",
+      "success_desc": "We will review your inputs and respond with your evaluation within two business days.",
+      "privacy_note": "Your calculator inputs are only transmitted when submitting this form."
+    },
+    "methodology": {
+      "title": "Methodology & Assumptions",
+      "p1": "The calculator breaks down gross revenue, platform share (OTA %), and effective commission rates.",
+      "p2": "Net savings account for direct booking overhead (e.g. 1.4–2.5% payment fees + booking engine).",
+      "p3": "Benchmark date: August 2026. All calculations run locally in your browser."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "Are direct bookings really that much cheaper than OTAs?",
+      "a1": "Yes, payment processing and booking engine combined typically cost 2–4%, while platforms charge 15–25% commission.",
+      "q2": "Can a custom website replace OTAs entirely?",
+      "a2": "Usually not, and that is not the goal. OTAs provide visibility for new guests. Your website converts returning guests and direct inquiries without commission.",
+      "q3": "How are packages and payback periods calculated?",
+      "a3": "We compare estimated annual net savings against our benchmark prices for professional website projects with booking integration.",
+      "q4": "Where do I find my exact commission rate?",
+      "a4": "Check your contract or extranet terms with each respective platform."
+    },
+    "teaser": {
+      "title": "How much commission do you pay per year?",
+      "subtitle": "Calculate your potential savings in 30 seconds.",
+      "units_label": "Units",
+      "adr_label": "Avg. Price / Night (€)",
+      "btn": "Start Calculator",
+      "faq_link_text": "Use our free OTA Commission Calculator"
+    },
+    "share": {
+      "btn": "Share Result",
+      "copied": "Link copied!"
+    }
   }
 }

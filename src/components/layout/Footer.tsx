@@ -36,6 +36,7 @@ export default function Footer() {
           <div className="flex flex-col">
             <h4 className="mono text-[var(--color-gold)] mb-[1rem]">{t('col_industries')}</h4>
             <Link href="/hospitality" className="block text-[var(--color-muted)] text-[1rem] mb-[0.6rem] transition-colors duration-300 hover:text-[var(--color-white)]">{tNav('hospitality')}</Link>
+            <Link href="/tools/ota-provisionsrechner" className="block text-[var(--color-muted)] text-[1rem] mb-[0.6rem] transition-colors duration-300 hover:text-[var(--color-white)]">{locale === 'el' ? 'Υπολογιστής OTA' : locale === 'en' ? 'OTA Calculator' : 'OTA-Provisionsrechner'}</Link>
           </div>
           
           <div className="flex flex-col">
