@@ -10,7 +10,7 @@ export interface DefaultSetting {
 export const PROPERTY_DEFAULTS: Record<'hotel' | 'apartments' | 'villa' | 'property_manager', DefaultSetting> = {
   hotel: {
     otaShare: 0.65,
-    otaCommission: 0.17,
+    otaCommission: 0.15,
     directCostRate: 0.03,
     openDays: 365,
     checkedAt: '2026-08-01',
@@ -18,7 +18,7 @@ export const PROPERTY_DEFAULTS: Record<'hotel' | 'apartments' | 'villa' | 'prope
   },
   apartments: {
     otaShare: 0.80,
-    otaCommission: 0.16,
+    otaCommission: 0.15,
     directCostRate: 0.03,
     openDays: 210,
     checkedAt: '2026-08-01',
@@ -26,7 +26,7 @@ export const PROPERTY_DEFAULTS: Record<'hotel' | 'apartments' | 'villa' | 'prope
   },
   villa: {
     otaShare: 0.85,
-    otaCommission: 0.16,
+    otaCommission: 0.15,
     directCostRate: 0.03,
     openDays: 180,
     checkedAt: '2026-08-01',
@@ -34,7 +34,7 @@ export const PROPERTY_DEFAULTS: Record<'hotel' | 'apartments' | 'villa' | 'prope
   },
   property_manager: {
     otaShare: 0.75,
-    otaCommission: 0.18,
+    otaCommission: 0.15,
     directCostRate: 0.035,
     openDays: 365,
     checkedAt: '2026-08-01',

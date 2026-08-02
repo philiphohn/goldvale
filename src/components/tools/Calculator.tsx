@@ -21,7 +21,7 @@ export default function Calculator({ initialParams }: CalculatorProps) {
   const [nightsPerUnit, setNightsPerUnit] = useState<number>(140);
   const [adr, setAdr] = useState<number>(120);
   const [otaShare, setOtaShare] = useState<number>(0.75);
-  const [otaCommission, setOtaCommission] = useState<number>(0.17);
+  const [otaCommission, setOtaCommission] = useState<number>(0.15);
   const [directCostRate, setDirectCostRate] = useState<number>(0.03);
   const [shiftPoints, setShiftPoints] = useState<number>(10);
   const [hasBookingEngine, setHasBookingEngine] = useState<boolean>(false);
