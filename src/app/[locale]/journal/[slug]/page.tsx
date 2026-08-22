@@ -99,7 +99,7 @@ export default async function BlogPostPage({params}: {params: Promise<{locale: s
       url: SITE_URL,
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_URL}/opengraph-image.jpg`
+        url: `${SITE_URL}/opengraph-image.png`
       }
     },
     mainEntityOfPage: {

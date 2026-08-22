@@ -22,7 +22,7 @@ export default async function JournalPage({params}: {params: Promise<{locale: st
     <section className="sec min-h-screen" id="journal">
       <div className="wrap pt-20 pb-32">
         <Reveal>
-          <SectionHeading idx={t('idx')} title={t('section_title')} moreText={t('all_posts')} moreLink="/journal" />
+          <SectionHeading as="h1" idx={t('idx')} title={t('section_title')} moreText={t('all_posts')} moreLink="/journal" />
         </Reveal>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[clamp(1.2rem,2.5vw,2rem)] gap-y-[3rem]">

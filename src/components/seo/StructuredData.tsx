@@ -14,7 +14,7 @@ export default function StructuredData() {
       width: '240',
       height: '90'
     },
-    image: `${SITE_URL}/opengraph-image.jpg`,
+    image: `${SITE_URL}/opengraph-image.png`,
     description: 'Goldvale Studios ist ein Digitalstudio für Websites, App-Entwicklung, Marken und Strategie.',
     email: 'hello@goldvalestudios.com',
     telephone: '+4915678412954',
@@ -55,7 +55,7 @@ export default function StructuredData() {
     legalName: 'HBC Hohn Business Consulting UG (haftungsbeschränkt)',
     url: SITE_URL,
     logo: `${SITE_URL}/images/goldvalestudios.svg`,
-    image: `${SITE_URL}/opengraph-image.jpg`,
+    image: `${SITE_URL}/opengraph-image.png`,
     priceRange: '$$$',
     telephone: '+4915678412954',
     email: 'hello@goldvalestudios.com',

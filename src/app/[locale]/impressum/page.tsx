@@ -7,7 +7,12 @@ import {getPageMetadata} from '@/lib/routes';
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   const t = await getTranslations({locale, namespace: 'Footer'});
-  return getPageMetadata(locale as any, '/impressum', t('impressum'), t('impressum'), false);
+  const description = locale === 'en'
+    ? 'Legal notice and company details of Goldvale Studios (HBC Hohn Business Consulting UG).'
+    : locale === 'el'
+    ? 'Στοιχεία εταιρείας και νομικές πληροφορίες της Goldvale Studios.'
+    : 'Impressum und rechtliche Angaben der Goldvale Studios (HBC Hohn Business Consulting UG).';
+  return getPageMetadata(locale as any, '/impressum', t('impressum'), description, false);
 }
 
 export default async function ImpressumPage({params}: {params: Promise<{locale: string}>}) {

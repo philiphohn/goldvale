@@ -1,33 +1,61 @@
 # Goldvale Studios
 
-> Goldvale Studios is a premium digital studio specializing in high-performance websites, custom web & mobile applications, and comprehensive brand strategies.
+> Goldvale Studios is a premium digital studio specializing in high-performance websites, custom web & mobile applications, direct booking solutions for hospitality, and comprehensive brand strategies.
 
 ## About Us
 We are a team of strategic thinkers, designers, and developers with a shared vision: digital excellence. We build digital products that not only look stunning but drive measurable impact, relying on timeless design and robust architecture for sustainable success.
 Goldvale Studios is a brand of **HBC Hohn Business Consulting UG (haftungsbeschränkt)**.
 
 ## Core Services
-1. **Websites & UX/UI**: Bespoke, high-conversion websites built on modern tech (Next.js, React, Tailwind CSS, Headless CMS) with an obsessive focus on performance and accessibility.
-2. **App Development**: Complex digital products, SaaS platforms, and mobile applications tailored to digitalize business-critical processes from architecture to deployment.
-3. **Branding & Design Systems**: Digital identities and corporate designs that ensure seamless and consistent brand experiences across all touchpoints.
-4. **Strategy & Consulting**: Data-driven digital strategies, UX audits, and precise roadmaps for sustainable growth and SEO dominance.
+1. **Websites & UX/UI**: Bespoke, high-conversion websites built on modern tech (Next.js, React, Headless CMS) with an obsessive focus on performance and accessibility.
+2. **App & Product Development**: Complex digital products, SaaS platforms, and mobile applications tailored to digitalize business-critical processes from architecture to deployment.
+3. **Hospitality Web Solutions**: Direct booking engines and custom web applications for hotels, boutique hotels, vacation rentals, and short-term rental hosts.
+4. **Branding & Design Systems**: Digital identities and corporate designs that ensure seamless and consistent brand experiences across all touchpoints.
+5. **Strategy & Consulting**: Data-driven digital strategies, UX audits, and precise roadmaps for sustainable growth and SEO dominance.
 
 ## Contact Information
-- **Representative:** Philip Hohn
+- **Founder & Representative:** Philip Hohn
 - **Address:** Lerchenstraße 7, 14089 Berlin, Germany
-- **Phone:** +49 15678 412954
+- **Phone (Germany / International):** +49 15678 412954
+- **Phone (Greece / Hospitality):** +30 697 4455142 (English & German speaking)
 - **Email:** hello@goldvalestudios.com
 - **Website:** https://www.goldvalestudios.com
 - **Commercial Register:** Amtsgericht Berlin (Charlottenburg), HRB 266039
 - **VAT ID:** DE369234361
 
-## Navigation & Resources
-- **Homepage**: https://www.goldvalestudios.com/
-- **Portfolio / Work**: https://www.goldvalestudios.com/de/arbeiten
-- **Services**: https://www.goldvalestudios.com/de/leistungen
-- **Hospitality**: https://www.goldvalestudios.com/de/hospitality
-- **Studio Profile**: https://www.goldvalestudios.com/de/studio
-- **Contact Us**: https://www.goldvalestudios.com/de/kontakt
-- **Sitemap**: https://www.goldvalestudios.com/sitemap.xml
+## Navigation & Resources (Multilingual)
+- **Homepage:**
+  - DE: https://www.goldvalestudios.com/de
+  - EN: https://www.goldvalestudios.com/en
+  - EL: https://www.goldvalestudios.com/el
+- **Portfolio / Work:**
+  - DE: https://www.goldvalestudios.com/de/arbeiten
+  - EN: https://www.goldvalestudios.com/en/work
+  - EL: https://www.goldvalestudios.com/el/erga
+- **Hospitality Solutions:**
+  - DE: https://www.goldvalestudios.com/de/hospitality
+  - EN: https://www.goldvalestudios.com/en/hospitality
+  - EL: https://www.goldvalestudios.com/el/hospitality
+- **OTA Commission Calculator:**
+  - DE: https://www.goldvalestudios.com/de/tools/ota-provisionsrechner
+  - EN: https://www.goldvalestudios.com/en/tools/ota-commission-calculator
+  - EL: https://www.goldvalestudios.com/el/ergaleia/ypologistis-promitheion-ota
+- **Services:**
+  - DE: https://www.goldvalestudios.com/de/leistungen
+  - EN: https://www.goldvalestudios.com/en/services
+  - EL: https://www.goldvalestudios.com/el/ypiresies
+- **Studio Profile:**
+  - DE: https://www.goldvalestudios.com/de/studio
+  - EN: https://www.goldvalestudios.com/en/studio
+  - EL: https://www.goldvalestudios.com/el/studio
+- **Journal:**
+  - DE: https://www.goldvalestudios.com/de/journal
+  - EN: https://www.goldvalestudios.com/en/journal
+  - EL: https://www.goldvalestudios.com/el/journal
+- **Contact Us:**
+  - DE: https://www.goldvalestudios.com/de/kontakt
+  - EN: https://www.goldvalestudios.com/en/contact
+  - EL: https://www.goldvalestudios.com/el/epikoinonia
+- **Sitemap:** https://www.goldvalestudios.com/sitemap.xml
 
 *This document is optimized for LLMs and AI Agents.*

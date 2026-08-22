@@ -9,7 +9,12 @@ import {getPageMetadata} from '@/lib/routes';
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   const t = await getTranslations({locale, namespace: 'Footer'});
-  return getPageMetadata(locale as any, '/datenschutz', t('datenschutz'), t('datenschutz'), false);
+  const description = locale === 'en'
+    ? 'Privacy policy and details on data processing at Goldvale Studios in accordance with GDPR.'
+    : locale === 'el'
+    ? 'Πολιτική απορρήτου και προστασίας δεδομένων της Goldvale Studios σύμφωνα με το GDPR.'
+    : 'Datenschutzerklärung und Informationen zur Datenverarbeitung bei Goldvale Studios gemäß DSGVO.';
+  return getPageMetadata(locale as any, '/datenschutz', t('datenschutz'), description, false);
 }
 
 export default async function DatenschutzPage({params}: {params: Promise<{locale: string}>}) {

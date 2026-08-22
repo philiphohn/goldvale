@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { route: '/leistungen', priority: 0.8, changeFrequency: 'weekly' as const },
     { route: '/hospitality', priority: 0.8, changeFrequency: 'monthly' as const },
     { route: '/webdesign-berlin', priority: 0.8, changeFrequency: 'monthly' as const },
+    { route: '/tools/ota-provisionsrechner', priority: 0.8, changeFrequency: 'monthly' as const },
     { route: '/arbeiten', priority: 0.8, changeFrequency: 'weekly' as const },
     { route: '/journal', priority: 0.8, changeFrequency: 'weekly' as const },
     { route: '/kontakt', priority: 0.8, changeFrequency: 'weekly' as const },

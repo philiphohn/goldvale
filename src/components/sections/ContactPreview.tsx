@@ -1,10 +1,17 @@
-import {useTranslations} from 'next-intl';
+import {useTranslations, useLocale} from 'next-intl';
 import Reveal from '@/components/ui/Reveal';
 import ContactForm from '@/components/ui/ContactForm';
 import Image from 'next/image';
 
 export default function ContactPreview({ source }: { source?: string }) {
   const t = useTranslations('Contact');
+  const locale = useLocale();
+
+  const founderAlt = locale === 'en'
+    ? 'Philip Hohn - Founder & Contact at Goldvale Studios'
+    : locale === 'el'
+    ? 'Philip Hohn - Ιδρυτής & Υπεύθυνος Επικοινωνίας στο Goldvale Studios'
+    : 'Philip Hohn - Gründer & Ansprechpartner bei Goldvale Studios';
 
   return (
     <section className="bg-[var(--color-background-2)] border-b border-[var(--color-line)] pt-24 pb-12" id="kontakt">
@@ -34,7 +41,7 @@ export default function ContactPreview({ source }: { source?: string }) {
           <Reveal delay={0.2} className="md:justify-self-end mt-12 md:mt-0">
             <div className="text-center md:text-left flex flex-col items-center md:items-start">
               <div className="w-[150px] h-[150px] rounded-full mx-auto md:mx-0 mb-[1rem] overflow-hidden border border-[var(--color-line)] relative">
-                <Image src="/images/founder.jpg" alt="Philip Hohn - Gründer & Ansprechpartner bei Goldvale Studios" fill className="object-cover" sizes="150px" />
+                <Image src="/images/founder.jpg" alt={founderAlt} fill className="object-cover" sizes="150px" />
               </div>
               <div className="font-medium text-[1.15rem]">Philip Hohn</div>
               <div className="mono !text-[0.8rem] !tracking-[0.08em] !text-[var(--color-muted)] mt-[0.35rem]">{t('person_role')}</div>
