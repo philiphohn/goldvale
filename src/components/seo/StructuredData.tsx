@@ -31,7 +31,14 @@ export default function StructuredData() {
         telephone: '+4915678412954',
         contactType: 'customer service',
         email: 'hello@goldvalestudios.com',
-        availableLanguage: ['German', 'English', 'Greek']
+        availableLanguage: ['German', 'English']
+      },
+      {
+        '@type': 'ContactPoint',
+        telephone: '+306974455142',
+        contactType: 'customer service',
+        email: 'hello@goldvalestudios.com',
+        availableLanguage: ['English', 'German']
       }
     ],
     sameAs: [

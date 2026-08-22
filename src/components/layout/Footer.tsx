@@ -42,7 +42,7 @@ export default function Footer() {
           <div className="flex flex-col">
             <h4 className="mono text-[var(--color-gold)] mb-[1rem]">{t('col_contact')}</h4>
             <a href="mailto:hello@goldvalestudios.com" className="block text-[var(--color-muted)] text-[1rem] mb-[0.6rem] transition-colors duration-300 hover:text-[var(--color-white)]">hello@goldvalestudios.com</a>
-            <a href="tel:+4915678412954" className="block text-[var(--color-muted)] text-[1rem] mb-[0.6rem] transition-colors duration-300 hover:text-[var(--color-white)]">+49 15678 412954</a>
+            <a href={`tel:${t('phone_raw')}`} className="block text-[var(--color-muted)] text-[1rem] mb-[0.6rem] transition-colors duration-300 hover:text-[var(--color-white)]">{t('phone')}</a>
             <a href="https://www.goldvalestudios.com" className="block text-[var(--color-muted)] text-[1rem] mb-[0.6rem] transition-colors duration-300 hover:text-[var(--color-white)]">goldvalestudios.com</a>
           </div>
           

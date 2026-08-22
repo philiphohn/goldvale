@@ -23,8 +23,8 @@ export default function ContactPreview({ source }: { source?: string }) {
               <a href="mailto:hello@goldvalestudios.com" className="text-[1.15rem] text-[var(--color-white)] transition-colors duration-300 w-max border-b border-[var(--color-line)] pb-[0.1em] hover:text-[var(--color-pop)] hover:border-[var(--color-pop)]">
                 hello@goldvalestudios.com
               </a>
-              <a href="tel:+4915678412954" className="text-[1.15rem] text-[var(--color-white)] transition-colors duration-300 w-max border-b border-[var(--color-line)] pb-[0.1em] hover:text-[var(--color-pop)] hover:border-[var(--color-pop)]">
-                +49 15678 412954
+              <a href={`tel:${t('phone_raw')}`} className="text-[1.15rem] text-[var(--color-white)] transition-colors duration-300 w-fit max-w-full border-b border-[var(--color-line)] pb-[0.1em] hover:text-[var(--color-pop)] hover:border-[var(--color-pop)]">
+                {t('phone')}
               </a>
             </div>
             

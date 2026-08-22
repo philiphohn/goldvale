@@ -39,9 +39,9 @@ export default async function ImpressumPage({params}: {params: Promise<{locale: 
             </div>
             
             <div>
-              <strong className="text-[var(--color-white)] block mb-1">{locale === 'en' ? 'Contact:' : 'Kontakt:'}</strong>
-              <p>{locale === 'en' ? 'Phone:' : 'Telefon:'} +49 15678 412954<br />
-              {locale === 'en' ? 'Email:' : 'E-Mail:'} hello@goldvalestudios.com</p>
+              <strong className="text-[var(--color-white)] block mb-1">{locale === 'en' ? 'Contact:' : locale === 'el' ? 'Επικοινωνία:' : 'Kontakt:'}</strong>
+              <p>{locale === 'en' ? 'Phone:' : locale === 'el' ? 'Τηλέφωνο:' : 'Telefon:'} {locale === 'el' ? '+30 697 4455142 (we speak English & German)' : '+49 15678 412954'}<br />
+              {locale === 'en' ? 'Email:' : locale === 'el' ? 'E-Mail:' : 'E-Mail:'} hello@goldvalestudios.com</p>
             </div>
             
             <div>

@@ -14,8 +14,13 @@ export default function Hero() {
           <span className="inline-block animate-[word_0.8s_cubic-bezier(0.16,1,0.3,1)_forwards] opacity-0 translate-y-[0.5em]" style={{animationDelay: '0.15s'}}>{t('line1')}</span>{' '}
           <span className="inline-block animate-[word_0.8s_cubic-bezier(0.16,1,0.3,1)_forwards] opacity-0 translate-y-[0.5em]" style={{animationDelay: '0.25s'}}>{t('line2')}</span>{' '}
           <span className="inline-block animate-[word_0.8s_cubic-bezier(0.16,1,0.3,1)_forwards] opacity-0 translate-y-[0.5em]" style={{animationDelay: '0.35s'}}>{t('line3')}</span>{' '}
-          <em className="inline-block animate-[word_0.8s_cubic-bezier(0.16,1,0.3,1)_forwards] opacity-0 translate-y-[0.5em] font-serif italic font-normal text-[var(--color-gold)] normal-case tracking-[-0.01em]" style={{animationDelay: '0.45s'}}>{t('line4')}</em>{' '}
-          <span className="inline-block animate-[word_0.8s_cubic-bezier(0.16,1,0.3,1)_forwards] opacity-0 translate-y-[0.5em]" style={{animationDelay: '0.55s'}}>{t('line5')}</span>
+          <em className="inline-block animate-[word_0.8s_cubic-bezier(0.16,1,0.3,1)_forwards] opacity-0 translate-y-[0.5em] font-serif italic font-normal text-[var(--color-gold)] normal-case tracking-[-0.01em]" style={{animationDelay: '0.45s'}}>{t('line4')}</em>
+          {t('line5') ? (
+            <>
+              {' '}
+              <span className="inline-block animate-[word_0.8s_cubic-bezier(0.16,1,0.3,1)_forwards] opacity-0 translate-y-[0.5em]" style={{animationDelay: '0.55s'}}>{t('line5')}</span>
+            </>
+          ) : null}
         </h1>
         
         <p className="mt-[clamp(2.2rem,5vw,3.5rem)] max-w-[52ch] text-[clamp(1.2rem,1.7vw,1.5rem)] leading-[1.55] text-[var(--color-muted)] opacity-0 animate-[fade_1s_0.7s_forwards]">
